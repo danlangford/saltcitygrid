@@ -17,7 +17,10 @@ jobs:
 
       - name: Fetch data from AlwaysBeRunning API
         run: |
-          curl -s "https://alwaysberunning.net/api/v2/tournaments?location=Salt+Lake+City&distance=160" -o abr_data.json
+          START_DATE=$(date -d '30 days ago' +%Y.%m.%d.)
+          END_DATE=$(date -d '400 days' +%Y.%m.%d.)
+          echo "Fetching events from $START_DATE to $END_DATE…"
+          curl -s "https://alwaysberunning.net/api/tournaments?location_lat=40.8&location_lng=-111.9&distance=160&start=$START_DATE&end=$END_DATE" -o abr_data.json
 
       - name: Commit changes if there are updates
         run: |

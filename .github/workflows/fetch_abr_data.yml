@@ -1,0 +1,35 @@
+name: Fetch AlwaysBeRunning Data
+
+on:
+  schedule:
+    - cron: "0 * * * *"  # Runs every hour
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  fetch-abrunning-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false  # Avoid using the default GitHub token
+
+      - name: Fetch data from AlwaysBeRunning API
+        run: |
+          curl -s "https://alwaysberunning.net/api/v2/tournaments?location=Salt+Lake+City&distance=160" -o abr_data.json
+
+      - name: Commit changes if there are updates
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet abr_data.json; then
+            echo "No changes detected, skipping commit."
+            exit 0
+          fi
+
+          git add abr_data.json
+          git commit -m "Updated ABR data - $(date '+%Y-%m-%d %H:%M:%S')"
+          git push "https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:main
+

@@ -43,17 +43,28 @@ body::before {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Default: Stacks items vertically */
     justify-content: center;
     align-items: center;
     padding: 20px;
+    gap: 20px;
 }
 
-.content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
+/* Make the layout side-by-side on wider screens */
+@media screen and (min-width: 900px) {
+    .container {
+        flex-direction: row; /* Side-by-side layout */
+        align-items: flex-start;
+    }
+
+    .events-container {
+        flex: 2; /* Events take more space */
+    }
+
+    .lore-container {
+        flex: 1; /* Lore takes less space */
+        max-width: 400px;
+    }
 }
 
 .events-container, .lore-container {
@@ -112,8 +123,6 @@ a:hover {
     text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
 }
 
-
-/* Glitch effect */
 @keyframes glitch {
     0% {
         text-shadow: 2px 0 #ff00ff, -2px 0 #00ffff;
@@ -141,10 +150,10 @@ a:hover {
     }
 }
 
-.glitch:hover {
+.glitch:hover,
+.glitch-active { /* Add class for JavaScript to trigger glitch */
     animation: glitch 0.2s infinite alternate;
 }
-
 
 /* Glitch flash effect on page load */
 @keyframes glitch-flash {

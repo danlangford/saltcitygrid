@@ -3,6 +3,26 @@ document.addEventListener("DOMContentLoaded", () => {
     loadEvents("cobra_tournaments.json", "cobra-past-events", "cobra-upcoming-events", formatCobraTournament);
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const glitchTitle = document.querySelector(".glitch");
+
+    // Detect if on mobile
+    function isMobile() {
+        return /Mobi|Android/i.test(navigator.userAgent);
+    }
+
+    if (isMobile()) {
+        glitchTitle.addEventListener("click", () => {
+            glitchTitle.classList.add("glitch-active");
+
+            // Remove glitch after a short time
+            setTimeout(() => {
+                glitchTitle.classList.remove("glitch-active");
+            }, 1000);
+        });
+    }
+});
+
 async function loadEvents(jsonFile, pastContainerId, upcomingContainerId, formatter) {
     try {
         const response = await fetch(jsonFile);

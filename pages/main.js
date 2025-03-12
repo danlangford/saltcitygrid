@@ -58,14 +58,14 @@ async function loadEvents(jsonFile, pastContainerId, upcomingContainerId, format
 
 function formatABREvent(event) {
     // someday support some iconography in the event that shows its recurring
-    return createEventElement(event, event.url, event.title, event.normalized_date, event.creator_name, event.players_count);
+    return createEventElement(event, event.url, event.title, event.normalized_date, event.creator_name, event.store + " " + event.address);
 }
 
 function formatCobraTournament(event) {
-    return createEventElement(event, event.url, event.title, event.normalized_date, event.tournament_organizer, event.player_count);
+    return createEventElement(event, event.url, event.title, event.normalized_date, event.tournament_organizer, event.player_count + " players");
 }
 
-function createEventElement(event, url, title, date, organizer, players) {
+function createEventElement(event, url, title, date, organizer, info) {
     const template = document.getElementById("event-template");
     const eventElement = template.content.cloneNode(true);
 
@@ -73,7 +73,7 @@ function createEventElement(event, url, title, date, organizer, players) {
     eventElement.querySelector(".event-title").textContent = title;
     eventElement.querySelector(".event-date").textContent = date;
     eventElement.querySelector(".event-organizer").textContent = organizer;
-    eventElement.querySelector(".event-players").textContent = players;
+    eventElement.querySelector(".event-info").textContent = info;
 
     return eventElement;
 }

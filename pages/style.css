@@ -112,6 +112,10 @@ h2 {
     border-bottom: none;
 }
 
+h3 {
+    color: #ff00ff;
+}
+
 a {
     color: #ff00ff;
     text-decoration: none;

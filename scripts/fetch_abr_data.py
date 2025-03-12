@@ -27,6 +27,7 @@ END_DATE = NOW + timedelta(days=400)
 all_tournaments = []
 for user_id in followed_abr_users:
     api_url = f"https://alwaysberunning.net/api/tournaments?creator_id={user_id}" 
+    print(f"calling {api_url} …")
     response = requests.get(api_url)
     
     if response.status_code == 200:

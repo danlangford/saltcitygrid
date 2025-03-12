@@ -27,25 +27,33 @@ END_DATE = NOW + timedelta(days=400)
 all_tournaments = []
 for user_id in followed_abr_users:
     api_url = f"https://alwaysberunning.net/api/tournaments?creator={user_id}" 
-    print(f"calling {api_url} …")
     response = requests.get(api_url)
     
     if response.status_code == 200:
         tournaments = response.json()
 
-        # Filter tournaments based on date range
         for t in tournaments:
             try:
-                event_date = datetime.strptime(t["date"], "%Y.%m.%d.")  # Convert "YYYY.MM.DD." to datetime
-                if START_DATE <= event_date <= END_DATE:
+                # If `date` is present, validate if it falls in range
+                if "date" in t and t["date"]:
+                    event_date = datetime.strptime(t["date"], "%Y.%m.%d.")  # Convert "YYYY.MM.DD." to datetime
+                    if START_DATE <= event_date <= END_DATE:
+                        all_tournaments.append(t)
+
+                # If `recurring_day` exists, always include the event
+                elif "recurring_day" in t and t["recurring_day"]:
                     all_tournaments.append(t)
+
             except ValueError:
-                print(f"Skipping event {t['id']} due to invalid date format: {t['date']}")
+                print(f"Skipping event {t.get('id', 'Unknown')} due to invalid date format: {t.get('date', 'N/A')}")
+
     else:
         print(f"Failed to fetch data for user {user_id}")
 
-# Sort tournaments by date and title
-all_tournaments.sort(key=lambda x: (x["date"], x["title"]))
+# Sort tournaments by:
+# 1. Regular events by date
+# 2. Recurring events alphabetically by `recurring_day`
+all_tournaments.sort(key=lambda x: (x.get("date", "9999-12-31"), x.get("recurring_day", ""), x["title"]))
 
 # Save filtered tournaments to JSON file
 with open("abr_data.json", "w") as f:

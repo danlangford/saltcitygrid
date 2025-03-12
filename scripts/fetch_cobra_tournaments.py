@@ -1,7 +1,18 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import yaml
 from datetime import datetime
+
+# Load config file with followed TOs
+CONFIG_FILE = "config/cobra_following.yml"
+try:
+    with open(CONFIG_FILE, "r") as f:
+        config = yaml.safe_load(f)
+        followed_tos = set(config.get("followed_tournament_organizers", []))
+except Exception as e:
+    print(f"Failed to load config file: {e}")
+    exit(1)
 
 # URL to fetch data from
 URL = "https://tournaments.nullsignal.games/tournaments"
@@ -32,6 +43,10 @@ for a_tag in soup.select("a[href^='/tournaments/']"):
         # Convert date to YYYY-MM-DD format
         date_parsed = datetime.strptime(date_str, "%d %b %Y").strftime("%Y-%m-%d")
 
+        # Skip tournaments not run by followed TOs
+        if tournament_organizer.lower() not in followed_tos:
+            continue
+
         # Store structured data
         tournaments.append({
             "id": tournament_id,
@@ -51,4 +66,4 @@ tournaments.sort(key=lambda x: (x["date"], x["title"]))
 with open("cobra_tournaments.json", "w") as f:
     json.dump(tournaments, f, indent=2)
 
-print(f"Saved {len(tournaments)} tournaments to cobra_tournaments.json")
+print(f"Saved {len(tournaments)} filtered tournaments to cobra_tournaments.json")

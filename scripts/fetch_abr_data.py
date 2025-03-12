@@ -26,7 +26,7 @@ END_DATE = NOW + timedelta(days=400)
 # Fetch tournaments for each followed ABR user
 all_tournaments = []
 for user_id in followed_abr_users:
-    api_url = f"https://alwaysberunning.net/api/tournaments?creator_id={user_id}" 
+    api_url = f"https://alwaysberunning.net/api/tournaments?creator={user_id}" 
     print(f"calling {api_url} …")
     response = requests.get(api_url)
     

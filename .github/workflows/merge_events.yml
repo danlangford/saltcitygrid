@@ -1,40 +1,42 @@
-name: Fetch COBRA Tournament Data
+name: Merge Events
 
 on:
-  schedule:
-    - cron: "0 */4 * * *"  # Runs every 4th hour
-  workflow_dispatch:  # Allows manual triggering
+  push:
+    branches:
+      - main
+    paths:
+      - "data/*.json"  # Run only when JSON event data changes
+
+  workflow_dispatch:  # Allow manual execution
 
 jobs:
-  fetch-cobra-data:
+  merge-events:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          persist-credentials: false  # Avoid using the default GitHub token
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y python3 python3-pip
           pip3 install -r scripts/requirements.txt
 
-      - name: Fetch and parse COBRA tournament data
-        run: python3 scripts/fetch_cobra_tournaments.py
+      - name: Merge Events
+        run: python3 scripts/merge_events.py
 
-      - name: Commit changes if there are updates
+      - name: Commit Merged Events
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add pages/cobra_tournaments.json
+          git add pages/merged_events.json
 
           if git diff --cached --quiet; then
             echo "No changes detected, skipping commit."
             exit 0
           fi
 
-          git commit -m "Updated COBRA tournament data - $(date '+%Y-%m-%d %H:%M:%S')"
+          git commit -m "Merged events - $(date '+%Y-%m-%d %H:%M:%S')"
           git push "https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:main

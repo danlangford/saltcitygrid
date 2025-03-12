@@ -16,41 +16,15 @@
     <div class="events-container">
 
         <section>
-            <h2>Upcoming AlwaysBeRunning Events</h2>
-            <div id="abr-upcoming-events" class="event-list"></div>
+            <h2>Upcoming Events</h2>
+            <div id="upcoming-events" class="event-list"></div>
         </section>
 
         <section>
-            <h2>Past AlwaysBeRunning Events</h2>
-            <div id="abr-past-events" class="event-list"></div>
+            <h2>Recent Events</h2>
+            <div id="past-events" class="event-list"></div>
         </section>
 
-        <section>
-            <h2>Past COBRA Tournaments</h2>
-            <div id="cobra-past-events" class="event-list"></div>
-        </section>
-
-        <section>
-            <h2>Upcoming COBRA Tournaments</h2>
-            <div id="cobra-upcoming-events" class="event-list"></div>
-        </section>
-
-        <section>
-            <h2>Past Discord Events</h2>
-            <div id="discord-past-events" class="event-list"></div>
-        </section>
-
-        <section>
-            <h2>Upcoming Discord Events</h2>
-            <div id="discord-upcoming-events" class="event-list"></div>
-        </section>
-
-        <section>
-            <h2>Upcoming Facebook events</h2>
-            <div id="todo-more-events" class="event-list">I plan to pull in Discord and FB events and then merge ALL
-                the lists together into a master list with links to ABR, Cobra, FB, Discord, etc.
-            </div>
-        </section>
     </div>
 
     <div class="lore-container">
@@ -85,9 +59,10 @@
 <!-- Template for event items -->
 <template id="event-template">
     <div class="event">
-        <h3><a class="event-title" target="_blank"></a></h3>
+        <h3><span class="event-title">Event Title</span></h3>
         <p><strong>Date:</strong> <span class="event-date"></span></p>
-        <p><strong>Organizer:</strong> <span class="event-organizer"></span></p>
+        <p><strong>Location:</strong> <span class="event-location"></span></p>
+        <p><strong>Links:</strong><span class="event-links"></span></p>
         <p><span class="event-info"></span></p>
     </div>
 </template>

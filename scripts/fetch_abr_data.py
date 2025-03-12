@@ -91,7 +91,7 @@ all_tournaments.sort(
 )
 
 # Save filtered tournaments to JSON file
-with open("pages/abr_data.json", "w") as f:
+with open("data/abr_data.json", "w") as f:
     json.dump(all_tournaments, f, indent=2)
 
-print(f"Saved {len(all_tournaments)} filtered ABR tournaments to pages/abr_data.json")
+print(f"Saved {len(all_tournaments)} filtered ABR tournaments to data/abr_data.json")

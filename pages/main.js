@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    loadEvents("abr_data.json", "abr-past-events", "abr-upcoming-events", formatABREvent);
-    loadEvents("cobra_tournaments.json", "cobra-past-events", "cobra-upcoming-events", formatCobraTournament);
-    loadEvents("discord_events.json", "discord-past-events", "discord-upcoming-events", formatDiscordEvent);
+    loadEvents("merged_events.json", "past-events", "upcoming-events", createEventElement);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -17,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 });
 
-async function loadEvents(jsonFile, pastContainerId, upcomingContainerId, formatter) {
+async function loadEvents(jsonFile, pastContainerId, upcomingContainerId, renderer) {
     try {
         const response = await fetch(jsonFile);
         if (!response.ok) throw new Error("Failed to load " + jsonFile);
@@ -37,7 +35,7 @@ async function loadEvents(jsonFile, pastContainerId, upcomingContainerId, format
         const upcomingEvents = [];
 
         events.forEach(event => {
-            if (event.normalized_date < today) {
+            if (event.date < today) {
                 pastEvents.push(event);
             } else {
                 upcomingEvents.push(event);
@@ -45,22 +43,22 @@ async function loadEvents(jsonFile, pastContainerId, upcomingContainerId, format
         });
 
         // Sort past events (most recent first)
-        pastEvents.sort((a, b) => b.normalized_date.localeCompare(a.normalized_date));
+        pastEvents.sort((a, b) => b.date.localeCompare(a.date));
 
         // Sort upcoming events (soonest first)
-        upcomingEvents.sort((a, b) => a.normalized_date.localeCompare(b.normalized_date));
+        upcomingEvents.sort((a, b) => a.date.localeCompare(b.date));
 
 
         // Display past events
         if (pastEvents.length > 0) {
-            pastEvents.forEach(event => pastContainer.appendChild(formatter(event)));
+            pastEvents.forEach(event => pastContainer.appendChild(renderer(event)));
         } else {
             pastContainer.innerHTML = "<p>No past events found.</p>";
         }
 
         // Display upcoming events
         if (upcomingEvents.length > 0) {
-            upcomingEvents.forEach(event => upcomingContainer.appendChild(formatter(event)));
+            upcomingEvents.forEach(event => upcomingContainer.appendChild(renderer(event)));
         } else {
             upcomingContainer.innerHTML = "<p>No upcoming events found.</p>";
         }
@@ -70,28 +68,25 @@ async function loadEvents(jsonFile, pastContainerId, upcomingContainerId, format
     }
 }
 
-function formatABREvent(event) {
-    // someday support some iconography in the event that shows its recurring
-    return createEventElement(event, event.url, event.title, event.normalized_date, event.creator_name, event.store + " " + event.address);
-}
 
-function formatCobraTournament(event) {
-    return createEventElement(event, event.url, event.title, event.normalized_date, event.tournament_organizer, event.player_count + " players");
-}
-
-function formatDiscordEvent(event) {
-    return createEventElement(event, `https://discord.com/events/${event.guild_id}/${event.id}`, event.name, event.normalized_date, event.creator.username, event.description);
-}
-
-function createEventElement(event, url, title, date, organizer, info) {
+function createEventElement(event) {
     const template = document.getElementById("event-template");
     const eventElement = template.content.cloneNode(true);
 
-    eventElement.querySelector(".event-title").href = url;
-    eventElement.querySelector(".event-title").textContent = title;
-    eventElement.querySelector(".event-date").textContent = date;
-    eventElement.querySelector(".event-organizer").textContent = organizer;
-    eventElement.querySelector(".event-info").textContent = info;
+    eventElement.querySelector(".event-title").textContent = event.title;
+    eventElement.querySelector(".event-date").textContent = event.date;
+    eventElement.querySelector(".event-location").textContent = [...new Set(event.locations)].join(" | ");
+    eventElement.querySelector(".event-info").textContent = [...new Set(event.details)].join(" | ");
+
+    // loop through sources creating a link for each
+    const sourcesElement = eventElement.querySelector(".event-links");
+    for (const source of event.sources) {
+        const link = document.createElement("a");
+        link.href = source.link;
+        link.innerText = source.source + " ";
+        link.target = "_blank";
+        sourcesElement.append(link);
+    }
 
     return eventElement;
 }

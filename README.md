@@ -19,8 +19,8 @@ AlwaysBeRunning (ABR) and COBRA, and is updated regularly using GitHub Actions.
 
 ## TODO
 
-- [ ] Add Discord event source.
+- [x] Add Discord event source.
 - [ ] Add Facebook event source.
-- [ ] Aggregate all "events" into a unified list with links back to the various sources.
+- [x] Aggregate all "events" into a unified list with links back to the various sources.
 
 Feel free to contribute and help improve the project! Submit a PR to get another event organizer added to the list.

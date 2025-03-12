@@ -2,7 +2,8 @@ import requests
 import json
 import yaml
 import os
-from datetime import datetime, timedelta, UTC
+from datetime import datetime, timedelta
+import pytz
 
 # Load config file for Discord settings
 CONFIG_FILE = "config/following.yml"
@@ -28,13 +29,13 @@ headers = {
 }
 
 # Define valid event date range
-NOW = datetime.now(UTC)
+NOW = datetime.now(pytz.UTC)
 START_DATE = NOW - timedelta(days=60)
 END_DATE = NOW + timedelta(days=400)
 
 # Load existing events to retain past ones
 try:
-    with open("pages/discord_events.json", "r") as f:
+    with open("data/discord_events.json", "r") as f:
         saved_events = json.load(f)
 except (FileNotFoundError, json.JSONDecodeError):
     saved_events = []
@@ -44,7 +45,8 @@ PAST_CUTOFF = NOW - timedelta(days=60)
 filtered_past_events = [
     event
     for event in saved_events
-    if datetime.strptime(event["start_time"], "%Y-%m-%dT%H:%M:%S%z") >= PAST_CUTOFF
+    if datetime.strptime(event["scheduled_start_time"], "%Y-%m-%dT%H:%M:%S%z")
+    >= PAST_CUTOFF
 ]
 
 # Create a dictionary of existing events for quick lookup
@@ -58,11 +60,14 @@ for guild_id in guild_ids:
     if response.status_code == 200:
         events = response.json()
         for event in events:
-            start_time = datetime.strptime(
+            start_time_utc = datetime.strptime(
                 event["scheduled_start_time"], "%Y-%m-%dT%H:%M:%S%z"
             )
-            if START_DATE <= start_time <= END_DATE:
-                event["normalized_date"] = start_time.strftime("%Y-%m-%d")
+            if START_DATE <= start_time_utc <= END_DATE:
+                # Convert UTC time to Mountain Time
+                mountain_tz = pytz.timezone("America/Denver")
+                start_time_mt = start_time_utc.astimezone(mountain_tz)
+                event["normalized_date"] = start_time_mt.strftime("%Y-%m-%d")
                 event_dict[event["id"]] = event
     else:
         print(
@@ -74,7 +79,7 @@ all_events = list(event_dict.values())
 all_events.sort(key=lambda x: x["scheduled_start_time"])
 
 # Save to JSON
-with open("pages/discord_events.json", "w") as f:
+with open("data/discord_events.json", "w") as f:
     json.dump(all_events, f, indent=2)
 
-print(f"Saved {len(all_events)} total Discord events to pages/discord_events.json")
+print(f"Saved {len(all_events)} total Discord events to data/discord_events.json")

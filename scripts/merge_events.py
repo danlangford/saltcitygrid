@@ -30,8 +30,9 @@ merged_events = defaultdict(
         "date": None,
         "title": None,
         "locations": [],
-        "sources": [],  # Now stores source + link together
+        "sources": [],
         "details": [],
+        "images": [],
     }
 )
 
@@ -45,9 +46,19 @@ for event in abr_events:
             if not merged_events[date]["title"]
             else merged_events[date]["title"]
         )
-        merged_events[date]["locations"].append(event.get("store", "Unknown"))
+        merged_events[date]["locations"].append(event.get("store"))
         merged_events[date]["sources"].append({"source": "ABR", "link": event["url"]})
         merged_events[date]["details"].append(event["title"])
+        for key in ["cardpool", "type", "format"]:
+            if event.get(key):
+                merged_events[date]["details"].append(f'{key}="{event.get(key)}"')
+        merged_events[date]["details"].append(
+            f'abr_organizer="{event["creator_name"]}"'
+        )
+        if event.get("recurring_day"):
+            merged_events[date]["details"].append(
+                f"recurring_day={event['recurring_day']}"
+            )
 
 # Merge Cobra events
 for event in cobra_events:
@@ -59,9 +70,11 @@ for event in cobra_events:
             if not merged_events[date]["title"]
             else merged_events[date]["title"]
         )
-        merged_events[date]["locations"].append("Unknown")  # Cobra lacks location info
         merged_events[date]["sources"].append({"source": "COBRA", "link": event["url"]})
         merged_events[date]["details"].append(event["title"])
+        merged_events[date]["details"].append(
+            f"cobra_players={event['player_count']} cobra_organizer={event['tournament_organizer']}"
+        )
 
 # Merge Discord events
 for event in discord_events:
@@ -74,7 +87,7 @@ for event in discord_events:
             else merged_events[date]["title"]
         )
         merged_events[date]["locations"].append(
-            event.get("entity_metadata", {}).get("location", "Unknown")
+            event.get("entity_metadata", {}).get("location")
         )
         merged_events[date]["sources"].append(
             {
@@ -83,6 +96,18 @@ for event in discord_events:
             }
         )
         merged_events[date]["details"].append(event["name"])
+        merged_events[date]["details"].append(event["description"])
+        merged_events[date]["details"].append(
+            f"discord_organizer={event['creator']['username']}"
+        )
+
+        if event.get("recurrence_rule"):
+            merged_events[date]["details"].append("recurring")
+
+        if event.get("image"):
+            merged_events[date]["images"].append(
+                f"https://cdn.discordapp.com/guild-events/{event['id']}/{event['image']}.png?size=512"
+            )
 
 # Convert merged dictionary to a list
 final_events = list(merged_events.values())

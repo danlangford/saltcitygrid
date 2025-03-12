@@ -88,6 +88,14 @@ function createEventElement(event) {
         sourcesElement.append(link);
     }
 
+    // loop through images creating img tags for each
+    const imagesElement = eventElement.querySelector(".event-images");
+    for (const image of event.images) {
+        const img = document.createElement("img");
+        img.src = image;
+        imagesElement.append(img);
+    }
+
     return eventElement;
 }
 

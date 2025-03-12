@@ -12,8 +12,13 @@
       }
     ],
     "details": [
-      "Netrunner Davis Co Meetup"
-    ]
+      "Netrunner Davis Co Meetup",
+      "cardpool=\"Rebellion Without Rehearsal\"",
+      "type=\"non-tournament event\"",
+      "format=\"standard\"",
+      "abr_organizer=\"ClanDaith\""
+    ],
+    "images": []
   },
   {
     "date": "2025-01-22",
@@ -28,15 +33,19 @@
       }
     ],
     "details": [
-      "Netrunner Utah County Meetup"
-    ]
+      "Netrunner Utah County Meetup",
+      "cardpool=\"Rebellion Without Rehearsal\"",
+      "type=\"non-tournament event\"",
+      "format=\"other\"",
+      "abr_organizer=\"tjaketheman\""
+    ],
+    "images": []
   },
   {
     "date": "2025-02-12",
     "title": "System Gateway Showdown GNK @ Galaxy of Games",
     "locations": [
-      "Galaxy of Games",
-      "Unknown"
+      "Galaxy of Games"
     ],
     "sources": [
       {
@@ -50,15 +59,20 @@
     ],
     "details": [
       "System Gateway Showdown GNK @ Galaxy of Games",
-      "System Gateway Showdown GNK @ Galaxy of Games"
-    ]
+      "cardpool=\"System Gateway\"",
+      "type=\"GNK / seasonal\"",
+      "format=\"other\"",
+      "abr_organizer=\"bagels (Dan)\"",
+      "System Gateway Showdown GNK @ Galaxy of Games",
+      "cobra_players=8 cobra_organizer=bagels"
+    ],
+    "images": []
   },
   {
     "date": "2025-03-11",
     "title": "System Gateway Showdown GNK @Kayfabe",
     "locations": [
-      "Kayfabe Cards",
-      "Unknown"
+      "Kayfabe Cards"
     ],
     "sources": [
       {
@@ -72,8 +86,14 @@
     ],
     "details": [
       "System Gateway Showdown GNK @Kayfabe",
-      "System Gateway Showdown GNK @Kayfabe"
-    ]
+      "cardpool=\"System Gateway\"",
+      "type=\"GNK / seasonal\"",
+      "format=\"other\"",
+      "abr_organizer=\"bagels (Dan)\"",
+      "System Gateway Showdown GNK @Kayfabe",
+      "cobra_players=8 cobra_organizer=bagels"
+    ],
+    "images": []
   },
   {
     "date": "2025-03-12",
@@ -94,8 +114,14 @@
     ],
     "details": [
       "Weekly Utah Meetup",
-      "Weekly Meetups"
-    ]
+      "abr_organizer=\"tjaketheman\"",
+      "recurring_day=Wednesday",
+      "Weekly Meetups",
+      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
+      "discord_organizer=tjaketheman",
+      "recurring"
+    ],
+    "images": []
   },
   {
     "date": "2025-04-24",
@@ -116,7 +142,16 @@
     ],
     "details": [
       "Elevation Release Event @Riftgate",
-      "Elevation Release Event @Riftgate"
+      "cardpool=\"Rebellion Without Rehearsal\"",
+      "type=\"non-tournament event\"",
+      "format=\"other\"",
+      "abr_organizer=\"bagels (Dan)\"",
+      "Elevation Release Event @Riftgate",
+      "Preorder your Elevation set! collect it, rip it open, hang out, and pick up some games",
+      "discord_organizer=8bagels"
+    ],
+    "images": [
+      "https://cdn.discordapp.com/guild-events/1332486425475551322/847706c6db01b8a89d5ccc6b8eb8d7d9.png?size=512"
     ]
   },
   {
@@ -138,8 +173,15 @@
     ],
     "details": [
       "Core Breach GNK @Riftgate",
-      "Core Breach GNK @Riftgate"
-    ]
+      "cardpool=\"System Update 2021\"",
+      "type=\"GNK / seasonal\"",
+      "format=\"other\"",
+      "abr_organizer=\"bagels (Dan)\"",
+      "Core Breach GNK @Riftgate",
+      "Single Sided Swiss with \"Core\" card pool (System Gateway + Elevation). More details to come",
+      "discord_organizer=8bagels"
+    ],
+    "images": []
   },
   {
     "date": "2025-06-14",
@@ -160,8 +202,15 @@
     ],
     "details": [
       "Capture the Flag Day CTK @Riftgate",
-      "Capture the Flag Day CTK @Riftgate"
-    ]
+      "cardpool=\"Rebellion Without Rehearsal\"",
+      "type=\"casual tournament kit\"",
+      "format=\"startup\"",
+      "abr_organizer=\"bagels (Dan)\"",
+      "Capture the Flag Day CTK @Riftgate",
+      "Placeholder! Mark your cale data for a Casual tournament. Startup format. Riftgate Games. Prizing includes alt-arts, playmats, invitation to the next circuit breaker. More details to come.",
+      "discord_organizer=8bagels"
+    ],
+    "images": []
   },
   {
     "date": "2025-03-31",
@@ -176,7 +225,11 @@
       }
     ],
     "details": [
-      "Netrunner Davis Co. Meetup"
-    ]
+      "Netrunner Davis Co. Meetup",
+      "Come and chill, talk Netrunner, show off your latest Netrunner bling...Oh, and play some Netrunner!\n\nThis event will be held on the first Monday of each month.",
+      "discord_organizer=clandaith",
+      "recurring"
+    ],
+    "images": []
   }
 ]

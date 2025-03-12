@@ -18,15 +18,28 @@ if not followed_abr_users:
     print("No followed ABR users configured. Exiting.")
     exit(0)
 
+# Define valid event date range
+NOW = datetime.now()
+START_DATE = NOW - timedelta(days=30)
+END_DATE = NOW + timedelta(days=400)
+
 # Fetch tournaments for each followed ABR user
 all_tournaments = []
 for user_id in followed_abr_users:
-    api_url = f"https://alwaysberunning.net/api/tournaments?creator={user_id}" 
+    api_url = f"https://alwaysberunning.net/api/tournaments?creator_id={user_id}" 
     response = requests.get(api_url)
     
     if response.status_code == 200:
         tournaments = response.json()
-        all_tournaments.extend(tournaments)
+
+        # Filter tournaments based on date range
+        for t in tournaments:
+            try:
+                event_date = datetime.strptime(t["date"], "%Y.%m.%d.")  # Convert "YYYY.MM.DD." to datetime
+                if START_DATE <= event_date <= END_DATE:
+                    all_tournaments.append(t)
+            except ValueError:
+                print(f"Skipping event {t['id']} due to invalid date format: {t['date']}")
     else:
         print(f"Failed to fetch data for user {user_id}")
 

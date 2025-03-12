@@ -2,5 +2,7 @@ followed_tournament_organizers:
   cobra:
     - "bagels"  # COBRA TOs to follow
 
-  abr:
-    - "49925"   # ABR NRDB user IDs to follow
+  abr: # ABR NRDB user IDs to follow
+    - "49925"   # bagels
+    - "49779"   # tjaketheman
+    - "10547"   # ClanDaith

@@ -12,68 +12,107 @@
         <p class="flavor-text">"The toxic dust clouds are bad for health, but great for Healthcare™ shareholders."</p>
 
         <div class="events-container">
-            <h2>AlwaysBeRunning Events</h2>
-            <div id="abr-events" class="event-list">Loading...</div>
+            <section>
+                <h2>Past AlwaysBeRunning Events</h2>
+                <div id="abr-past-events" class="event-list"></div>
+            </section>
 
-            <h2>COBRA Tournaments</h2>
-            <div id="cobra-tournaments" class="event-list">Loading...</div>
+            <section>
+                <h2>Upcoming AlwaysBeRunning Events</h2>
+                <div id="abr-upcoming-events" class="event-list"></div>
+            </section>
+
+            <section>
+                <h2>Past COBRA Tournaments</h2>
+                <div id="cobra-past-events" class="event-list"></div>
+            </section>
+
+            <section>
+                <h2>Upcoming COBRA Tournaments</h2>
+                <div id="cobra-upcoming-events" class="event-list"></div>
+            </section>
         </div>
     </div>
 
+    <!-- Template for event items -->
+    <template id="event-template">
+        <div class="event">
+            <h3><a class="event-title" target="_blank"></a></h3>
+            <p><strong>Date:</strong> <span class="event-date"></span></p>
+            <p><strong>Organizer:</strong> <span class="event-organizer"></span></p>
+            <p><strong>Players:</strong> <span class="event-players"></span></p>
+        </div>
+    </template>
+
     <script>
-        // Function to load and display events from a JSON file
-        async function loadEvents(jsonFile, containerId, formatter) {
+        document.addEventListener("DOMContentLoaded", () => {
+            loadEvents("abr_data.json", "abr-past-events", "abr-upcoming-events", formatABREvent);
+            loadEvents("cobra_tournaments.json", "cobra-past-events", "cobra-upcoming-events", formatCobraTournament);
+        });
+
+        async function loadEvents(jsonFile, pastContainerId, upcomingContainerId, formatter) {
             try {
                 const response = await fetch(jsonFile);
                 if (!response.ok) throw new Error("Failed to load " + jsonFile);
                 const events = await response.json();
 
-                const container = document.getElementById(containerId);
-                container.innerHTML = ""; // Clear loading text
+                const pastContainer = document.getElementById(pastContainerId);
+                const upcomingContainer = document.getElementById(upcomingContainerId);
 
-                if (events.length === 0) {
-                    container.innerHTML = "<p>No upcoming events found.</p>";
-                    return;
+                // Clear previous content
+                pastContainer.innerHTML = "";
+                upcomingContainer.innerHTML = "";
+
+                // Get today's date for filtering
+                const today = new Date().toISOString().split("T")[0];
+
+                const pastEvents = events.filter(event => event.date < today);
+                const upcomingEvents = events.filter(event => event.date >= today);
+
+                // Sort past events (most recent first)
+                pastEvents.sort((a, b) => b.date.localeCompare(a.date));
+
+                // Sort upcoming events (soonest first)
+                upcomingEvents.sort((a, b) => a.date.localeCompare(b.date));
+
+                // Display past events
+                if (pastEvents.length > 0) {
+                    pastEvents.forEach(event => pastContainer.appendChild(formatter(event)));
+                } else {
+                    pastContainer.innerHTML = "<p>No past events found.</p>";
                 }
 
-                events.forEach(event => {
-                    const eventHTML = formatter(event);
-                    container.innerHTML += eventHTML;
-                });
+                // Display upcoming events
+                if (upcomingEvents.length > 0) {
+                    upcomingEvents.forEach(event => upcomingContainer.appendChild(formatter(event)));
+                } else {
+                    upcomingContainer.innerHTML = "<p>No upcoming events found.</p>";
+                }
             } catch (error) {
                 console.error("Error loading events:", error);
-                document.getElementById(containerId).innerHTML = "<p>Error loading events.</p>";
             }
         }
 
-        // Formatter for ABR events
         function formatABREvent(event) {
-            return `
-                <div class="event">
-                    <h3><a href="${event.url}" target="_blank">${event.title}</a></h3>
-                    <p><strong>Date:</strong> ${event.date.replace(/\./g, '-')}</p>
-                    <p><strong>Location:</strong> ${event.location}</p>
-                    <p><strong>Organizer:</strong> ${event.creator_name}</p>
-                    <p><strong>Players:</strong> ${event.players_count}</p>
-                </div>
-            `;
+            return createEventElement(event, event.url, event.title, event.date.replace(/\./g, '-'), event.creator_name, event.players_count);
         }
 
-        // Formatter for COBRA tournaments
         function formatCobraTournament(event) {
-            return `
-                <div class="event">
-                    <h3><a href="${event.url}" target="_blank">${event.title}</a></h3>
-                    <p><strong>Date:</strong> ${event.date}</p>
-                    <p><strong>Organizer:</strong> ${event.tournament_organizer}</p>
-                    <p><strong>Players:</strong> ${event.player_count}</p>
-                </div>
-            `;
+            return createEventElement(event, event.url, event.title, event.date, event.tournament_organizer, event.player_count);
         }
 
-        // Load events
-        loadEvents("abr_data.json", "abr-events", formatABREvent);
-        loadEvents("cobra_tournaments.json", "cobra-tournaments", formatCobraTournament);
+        function createEventElement(event, url, title, date, organizer, players) {
+            const template = document.getElementById("event-template");
+            const eventElement = template.content.cloneNode(true);
+
+            eventElement.querySelector(".event-title").href = url;
+            eventElement.querySelector(".event-title").textContent = title;
+            eventElement.querySelector(".event-date").textContent = date;
+            eventElement.querySelector(".event-organizer").textContent = organizer;
+            eventElement.querySelector(".event-players").textContent = players;
+
+            return eventElement;
+        }
     </script>
 </body>
 </html>

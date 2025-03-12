@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import yaml
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # Load config file with followed TOs
 CONFIG_FILE = "config/following.yml"
@@ -18,6 +18,11 @@ except Exception as e:
 if not followed_tos:
     print("No followed COBRA TOs configured. Exiting.")
     exit(0)
+
+# Define valid event date range
+NOW = datetime.now()
+START_DATE = NOW - timedelta(days=30)
+END_DATE = NOW + timedelta(days=400)
 
 # URL to fetch data from
 URL = "https://tournaments.nullsignal.games/tournaments"
@@ -45,18 +50,18 @@ for a_tag in soup.select("a[href^='/tournaments/']"):
         player_count = int(parts[1].split()[0])  # Extract player count
         tournament_organizer = parts[2].strip()  # Extract TO name
 
-        # Convert date to YYYY-MM-DD format
-        date_parsed = datetime.strptime(date_str, "%d %b %Y").strftime("%Y-%m-%d")
+        # Convert date string to datetime object
+        event_date = datetime.strptime(date_str, "%d %b %Y")
 
-        # Skip tournaments not run by followed TOs
-        if tournament_organizer.lower() not in followed_tos:
+        # Skip tournaments outside the valid date range
+        if not (START_DATE <= event_date <= END_DATE):
             continue
 
         # Store structured data
         tournaments.append({
             "id": tournament_id,
             "title": title,
-            "date": date_parsed,
+            "date": event_date.strftime("%Y-%m-%d"),  # Keep YYYY-MM-DD format
             "player_count": player_count,
             "tournament_organizer": tournament_organizer,
             "url": f"https://tournaments.nullsignal.games/tournaments/{tournament_id}"

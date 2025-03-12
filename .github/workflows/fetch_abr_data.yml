@@ -15,12 +15,16 @@ jobs:
         with:
           persist-credentials: false  # Avoid using the default GitHub token
 
+      - name: Install jq (for JSON formatting)
+        run: sudo apt-get update && sudo apt-get install -y jq
+
       - name: Fetch data from AlwaysBeRunning API
         run: |
           START_DATE=$(date -d '30 days ago' +%Y.%m.%d.)
           END_DATE=$(date -d '400 days' +%Y.%m.%d.)
           echo "Fetching events from $START_DATE to $END_DATE…"
-          curl -s "https://alwaysberunning.net/api/tournaments?location_lat=40.8&location_lng=-111.9&distance=160&start=$START_DATE&end=$END_DATE" -o abr_data.json
+
+          curl -s "https://alwaysberunning.net/api/tournaments?location_lat=40.8&location_lng=-111.9&distance=160&start=$START_DATE&end=$END_DATE" | jq '. | sort_by(.date, .title)' > abr_data.json
 
       - name: Commit changes if there are updates
         run: |
@@ -34,7 +38,5 @@ jobs:
             exit 0
           fi
 
-          git add abr_data.json
           git commit -m "Updated ABR data - $(date '+%Y-%m-%d %H:%M:%S')"
           git push "https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:main
-

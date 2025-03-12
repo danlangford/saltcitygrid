@@ -18,14 +18,10 @@ if not followed_abr_users:
     print("No followed ABR users configured. Exiting.")
     exit(0)
 
-# Define the date range for events
-#START_DATE = (datetime.now() - timedelta(days=30)).strftime("%Y.%m.%d.")
-#END_DATE = (datetime.now() + timedelta(days=400)).strftime("%Y.%m.%d.")
-
 # Fetch tournaments for each followed ABR user
 all_tournaments = []
 for user_id in followed_abr_users:
-    api_url = f"https://alwaysberunning.net/api/tournaments?creator_id={user_id}" # &start={START_DATE}&end={END_DATE}
+    api_url = f"https://alwaysberunning.net/api/tournaments?creator={user_id}" 
     response = requests.get(api_url)
     
     if response.status_code == 200:

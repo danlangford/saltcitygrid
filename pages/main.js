@@ -4,23 +4,16 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const glitchTitle = document.querySelector(".glitch");
-
-    // Detect if on mobile
-    function isMobile() {
-        return /Mobi|Android/i.test(navigator.userAgent);
-    }
-
-    if (isMobile()) {
-        glitchTitle.addEventListener("click", () => {
-            glitchTitle.classList.add("glitch-active");
-
+    const glitchElems = document.querySelectorAll(".glitch");
+    glitchElems.forEach(glitchElem => {
+        glitchElem.addEventListener("click", () => {
+            glitchElem.classList.add("glitch-active");
             // Remove glitch after a short time
             setTimeout(() => {
-                glitchTitle.classList.remove("glitch-active");
+                glitchElem.classList.remove("glitch-active");
             }, 1000);
         });
-    }
+    })
 });
 
 async function loadEvents(jsonFile, pastContainerId, upcomingContainerId, formatter) {

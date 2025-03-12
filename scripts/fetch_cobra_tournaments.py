@@ -79,7 +79,7 @@ for a_tag in soup.select("a[href^='/tournaments/']"):
 tournaments.sort(key=lambda x: (x["date"], x["title"]))
 
 # Save filtered tournaments to JSON file
-with open("cobra_tournaments.json", "w") as f:
+with open("pages/cobra_tournaments.json", "w") as f:
     json.dump(tournaments, f, indent=2)
 
-print(f"Saved {len(tournaments)} filtered COBRA tournaments to cobra_tournaments.json")
+print(f"Saved {len(tournaments)} filtered COBRA tournaments to pages/cobra_tournaments.json")

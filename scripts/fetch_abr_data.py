@@ -56,7 +56,7 @@ for user_id in followed_abr_users:
 all_tournaments.sort(key=lambda x: (x.get("date", "9999-12-31"), x.get("recurring_day", ""), x["title"]))
 
 # Save filtered tournaments to JSON file
-with open("abr_data.json", "w") as f:
+with open("pages/abr_data.json", "w") as f:
     json.dump(all_tournaments, f, indent=2)
 
-print(f"Saved {len(all_tournaments)} filtered ABR tournaments to abr_data.json")
+print(f"Saved {len(all_tournaments)} filtered ABR tournaments to pages/abr_data.json")

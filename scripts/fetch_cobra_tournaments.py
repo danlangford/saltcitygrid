@@ -57,6 +57,11 @@ for a_tag in soup.select("a[href^='/tournaments/']"):
         if not (START_DATE <= event_date <= END_DATE):
             continue
 
+        # **NEW FIX: Skip tournaments if TO is not in `following.yml`**
+        if tournament_organizer.lower() not in [to.lower() for to in followed_tos]:
+            print(f"Skipping tournament {title} (ID: {tournament_id}) - TO {tournament_organizer} not followed.")
+            continue
+
         # Store structured data
         tournaments.append({
             "id": tournament_id,
@@ -66,6 +71,7 @@ for a_tag in soup.select("a[href^='/tournaments/']"):
             "tournament_organizer": tournament_organizer,
             "url": f"https://tournaments.nullsignal.games/tournaments/{tournament_id}"
         })
+
     except Exception as e:
         print(f"Skipping entry due to error: {e}")
 

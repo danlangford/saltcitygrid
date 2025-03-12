@@ -21,7 +21,7 @@ if not followed_tos:
 
 # Define valid event date range
 NOW = datetime.now()
-START_DATE = NOW - timedelta(days=30)
+START_DATE = NOW - timedelta(days=60)
 END_DATE = NOW + timedelta(days=400)
 
 # URL to fetch data from

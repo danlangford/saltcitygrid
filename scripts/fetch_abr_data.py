@@ -20,7 +20,7 @@ if not followed_abr_users:
 
 # Define valid event date range
 NOW = datetime.now()
-START_DATE = NOW - timedelta(days=30)
+START_DATE = NOW - timedelta(days=60)
 END_DATE = NOW + timedelta(days=400)
 
 # Fetch tournaments for each followed ABR user

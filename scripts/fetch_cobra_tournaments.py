@@ -10,7 +10,9 @@ CONFIG_FILE = "config/following.yml"
 try:
     with open(CONFIG_FILE, "r") as f:
         config = yaml.safe_load(f)
-        followed_tos = set(config.get("followed_tournament_organizers", {}).get("cobra", []))
+        followed_tos = set(
+            config.get("followed_tournament_organizers", {}).get("cobra", [])
+        )
 except Exception as e:
     print(f"Failed to load config file: {e}")
     exit(1)
@@ -59,27 +61,33 @@ for a_tag in soup.select("a[href^='/tournaments/']"):
 
         # **NEW FIX: Skip tournaments if TO is not in `following.yml`**
         if tournament_organizer.lower() not in [to.lower() for to in followed_tos]:
-            print(f"Skipping tournament {title} (ID: {tournament_id}) - TO {tournament_organizer} not followed.")
             continue
 
         # Store structured data
-        tournaments.append({
-            "id": tournament_id,
-            "title": title,
-            "date": event_date.strftime("%Y-%m-%d"),  # Keep YYYY-MM-DD format
-            "player_count": player_count,
-            "tournament_organizer": tournament_organizer,
-            "url": f"https://tournaments.nullsignal.games/tournaments/{tournament_id}"
-        })
+        tournaments.append(
+            {
+                "id": tournament_id,
+                "title": title,
+                "date": date_str,  # Retain original date format
+                "normalized_date": event_date.strftime(
+                    "%Y-%m-%d"
+                ),  # Add normalized date in ISO 8601 format
+                "player_count": player_count,
+                "tournament_organizer": tournament_organizer,
+                "url": f"https://tournaments.nullsignal.games/tournaments/{tournament_id}",
+            }
+        )
 
     except Exception as e:
         print(f"Skipping entry due to error: {e}")
 
 # Sort tournaments by date and title
-tournaments.sort(key=lambda x: (x["date"], x["title"]))
+tournaments.sort(key=lambda x: (x["normalized_date"], x["title"]))
 
 # Save filtered tournaments to JSON file
 with open("pages/cobra_tournaments.json", "w") as f:
     json.dump(tournaments, f, indent=2)
 
-print(f"Saved {len(tournaments)} filtered COBRA tournaments to pages/cobra_tournaments.json")
+print(
+    f"Saved {len(tournaments)} filtered COBRA tournaments to pages/cobra_tournaments.json"
+)

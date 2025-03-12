@@ -28,7 +28,8 @@
     "mwl": "Standard Ban List 24.12",
     "concluded": false,
     "charity": false,
-    "rendered_in": 0.05115389823913574
+    "rendered_in": 0.07291817665100098,
+    "normalized_date": "2025-01-16"
   },
   {
     "id": 4658,
@@ -59,7 +60,8 @@
     "mwl": "Standard Ban List 24.12",
     "concluded": false,
     "charity": false,
-    "rendered_in": 0.06860685348510742
+    "rendered_in": 0.07673501968383789,
+    "normalized_date": "2025-01-22"
   },
   {
     "id": 4654,
@@ -97,7 +99,8 @@
     "matchdata": true,
     "videos": 0,
     "winner_runner_identity": "30001",
-    "winner_corp_identity": "30051"
+    "winner_corp_identity": "30051",
+    "normalized_date": "2025-02-12"
   },
   {
     "id": 4690,
@@ -135,7 +138,8 @@
     "matchdata": true,
     "videos": 0,
     "winner_runner_identity": "30010",
-    "winner_corp_identity": "30035"
+    "winner_corp_identity": "30035",
+    "normalized_date": "2025-03-11"
   },
   {
     "id": 4691,
@@ -165,7 +169,8 @@
     "format": "other",
     "mwl": "-not applicable-",
     "concluded": false,
-    "charity": false
+    "charity": false,
+    "normalized_date": "2025-04-24"
   },
   {
     "id": 4761,
@@ -195,7 +200,8 @@
     "format": "other",
     "mwl": "-not applicable-",
     "concluded": false,
-    "charity": false
+    "charity": false,
+    "normalized_date": "2025-05-14"
   },
   {
     "id": 4760,
@@ -226,7 +232,8 @@
     "mwl": "Standard Ban List 24.12",
     "concluded": false,
     "charity": false,
-    "rendered_in": 0.06334590911865234
+    "rendered_in": 0.06486701965332031,
+    "normalized_date": "2025-06-14"
   },
   {
     "id": 4768,

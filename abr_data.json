@@ -956,7 +956,7 @@
     "charity": false,
     "players_count": 15,
     "top_count": 0,
-    "claim_count": 4,
+    "claim_count": 5,
     "claim_conflict": false,
     "matchdata": true,
     "videos": 0,
@@ -2047,7 +2047,7 @@
     "place_id": "ChIJj2X3mx1rkFQRCBPl7NqkVz8",
     "contact": "smittyl#0592 on Discord",
     "approved": 1,
-    "registration_count": 3,
+    "registration_count": 4,
     "photos": 0,
     "url": "https://alwaysberunning.net/tournaments/4753/seattle-casual-tournament-march-weeknight-edition",
     "link_facebook": "",
@@ -4557,6 +4557,6 @@
     "concluded": false,
     "charity": false,
     "end_date": "2025.07.20.",
-    "rendered_in": 0.2897510528564453
+    "rendered_in": 0.4104039669036865
   }
 ]

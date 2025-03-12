@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;500;700&display=swap');
 
 body {
     background-color: #0a0f1a;
     color: #00ffcc;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Inter', sans-serif; /* Change from Orbitron */
     text-align: center;
     margin: 0;
     padding: 0;
@@ -65,6 +64,10 @@ body::before {
 .lore-container {
     max-width: 400px;
     text-align: left;
+}
+
+h1, h2 {
+    font-family: 'Orbitron', sans-serif; /* Keep Orbitron for headings */
 }
 
 h1 {

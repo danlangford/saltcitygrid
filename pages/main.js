@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     loadEvents("abr_data.json", "abr-past-events", "abr-upcoming-events", formatABREvent);
     loadEvents("cobra_tournaments.json", "cobra-past-events", "cobra-upcoming-events", formatCobraTournament);
+    loadEvents("discord_events.json", "discord-past-events", "discord-upcoming-events", formatDiscordEvent);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -76,6 +77,10 @@ function formatABREvent(event) {
 
 function formatCobraTournament(event) {
     return createEventElement(event, event.url, event.title, event.normalized_date, event.tournament_organizer, event.player_count + " players");
+}
+
+function formatDiscordEvent(event) {
+    return createEventElement(event, `https://discord.com/events/${event.guild_id}/${event.id}`, event.name, event.normalized_date, event.creator.username, event.description);
 }
 
 function createEventElement(event, url, title, date, organizer, info) {

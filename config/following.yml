@@ -6,3 +6,6 @@ followed_tournament_organizers:
     - "49925"   # bagels
     - "49779"   # tjaketheman
     - "10547"   # ClanDaith
+
+discord_guilds:
+  - "1316604261374627880"  # Utah Netrunner Server

@@ -15,16 +15,14 @@ jobs:
         with:
           persist-credentials: false  # Avoid using the default GitHub token
 
-      - name: Install jq (for JSON formatting)
-        run: sudo apt-get update && sudo apt-get install -y jq
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3 python3-pip
+          pip3 install -r scripts/requirements.txt
 
       - name: Fetch data from AlwaysBeRunning API
-        run: |
-          START_DATE=$(date -d '30 days ago' +%Y.%m.%d.)
-          END_DATE=$(date -d '400 days' +%Y.%m.%d.)
-          echo "Fetching events from $START_DATE to $END_DATE…"
-
-          curl -s "https://alwaysberunning.net/api/tournaments?location_lat=40.8&location_lng=-111.9&distance=160&start=$START_DATE&end=$END_DATE" | jq '. | sort_by(.date, .title)' > abr_data.json
+        run: python3 scripts/fetch_abr_data.py
 
       - name: Commit changes if there are updates
         run: |

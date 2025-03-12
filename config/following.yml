@@ -1,0 +1,6 @@
+followed_tournament_organizers:
+  cobra:
+    - "bagels"  # COBRA TOs to follow
+
+  abr:
+    - "49925"   # ABR NRDB user IDs to follow

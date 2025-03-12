@@ -5,14 +5,19 @@ import yaml
 from datetime import datetime
 
 # Load config file with followed TOs
-CONFIG_FILE = "config/cobra_following.yml"
+CONFIG_FILE = "config/following.yml"
+
 try:
     with open(CONFIG_FILE, "r") as f:
         config = yaml.safe_load(f)
-        followed_tos = set(config.get("followed_tournament_organizers", []))
+        followed_tos = set(config.get("followed_tournament_organizers", {}).get("cobra", []))
 except Exception as e:
     print(f"Failed to load config file: {e}")
     exit(1)
+
+if not followed_tos:
+    print("No followed COBRA TOs configured. Exiting.")
+    exit(0)
 
 # URL to fetch data from
 URL = "https://tournaments.nullsignal.games/tournaments"
@@ -62,8 +67,8 @@ for a_tag in soup.select("a[href^='/tournaments/']"):
 # Sort tournaments by date and title
 tournaments.sort(key=lambda x: (x["date"], x["title"]))
 
-# Save as formatted JSON
+# Save filtered tournaments to JSON file
 with open("cobra_tournaments.json", "w") as f:
     json.dump(tournaments, f, indent=2)
 
-print(f"Saved {len(tournaments)} filtered tournaments to cobra_tournaments.json")
+print(f"Saved {len(tournaments)} filtered COBRA tournaments to cobra_tournaments.json")

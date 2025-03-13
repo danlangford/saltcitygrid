@@ -27,6 +27,8 @@ body::before {
     animation: scanlines 2s linear infinite;
     opacity: 0.5;
     z-index: 9999;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -43,11 +45,14 @@ body::before {
 
 .container {
     display: flex;
-    flex-direction: column; /* Default: Stacks items vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
     gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 /* Make the layout side-by-side on wider screens */
@@ -70,11 +75,18 @@ body::before {
 .events-container, .lore-container {
     flex: 1;
     margin: 10px;
+    width: 100%;
+    max-width: 600px;
 }
 
 .lore-container {
     max-width: 400px;
     text-align: left;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 h1, h2 {
@@ -91,6 +103,32 @@ h1 {
 h2 {
     margin-top: 20px;
     color: #ff00ff;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+/* Allow tables to scroll on small screens */
+@media screen and (max-width: 768px) {
+    .table-wrapper {
+        overflow-x: auto; /* Enables horizontal scrolling if needed */
+        width: 100%;
+    }
+
+    table {
+        display: block;
+        width: max-content;
+        min-width: 100%;
+    }
 }
 
 .event-list {

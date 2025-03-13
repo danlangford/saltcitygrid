@@ -75,6 +75,7 @@ function createEventElement(event) {
 
     eventElement.querySelector(".event-title").textContent = event.title;
     eventElement.querySelector(".event-date").textContent = event.date;
+    eventElement.querySelector(".event-location").href = generateGoogleMapsUrl([...new Set(event.locations)].join(" | "));
     eventElement.querySelector(".event-location").textContent = [...new Set(event.locations)].join(" | ");
     eventElement.querySelector(".event-info").textContent = [...new Set(event.details)].join(" | ");
 
@@ -97,6 +98,15 @@ function createEventElement(event) {
     }
 
     return eventElement;
+}
+
+function generateGoogleMapsUrl(locationName) {
+    if (!locationName) return ""; // Handle empty input
+
+    // Encode the location string properly for a URL
+    const encodedQuery = encodeURIComponent(locationName);
+
+    return `https://www.google.com/maps/search/?q=${encodedQuery}`;
 }
 
 

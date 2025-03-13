@@ -46,7 +46,12 @@ for event in abr_events:
             if not merged_events[date]["title"]
             else merged_events[date]["title"]
         )
-        merged_events[date]["locations"].append(event.get("store"))
+
+        # concatenate event "store" and "address" into a single string and remove the trailing ", USA" if it exists
+        if event.get("store") and event.get("address"):
+            event["address"] = event["address"].replace(", USA", "")
+            merged_events[date]["locations"].append(f"{event.get("store")}, {event.get("address")}")
+
         merged_events[date]["sources"].append({"source": "ABR", "link": event["url"]})
         merged_events[date]["details"].append(event["title"])
         for key in ["cardpool", "type", "format"]:

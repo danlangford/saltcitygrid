@@ -23,13 +23,13 @@
       "primary_guild": null
     },
     "image": null,
-    "scheduled_start_time": "2025-03-13T00:00:00+00:00",
-    "scheduled_end_time": "2026-01-08T04:00:00+00:00",
-    "status": 2,
+    "scheduled_start_time": "2025-03-20T00:00:00+00:00",
+    "scheduled_end_time": "2025-03-20T03:00:00+00:00",
+    "status": 1,
     "entity_type": 3,
     "entity_id": null,
     "recurrence_rule": {
-      "start": "2025-03-13T00:00:00+00:00",
+      "start": "2025-03-20T00:00:00+00:00",
       "end": null,
       "frequency": 2,
       "interval": 1,
@@ -48,7 +48,7 @@
     "entity_metadata": {
       "location": "Riftgate Games"
     },
-    "normalized_date": "2025-03-12"
+    "normalized_date": "2025-03-19"
   },
   {
     "id": "1329926010254397552",

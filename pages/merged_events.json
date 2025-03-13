@@ -60,7 +60,7 @@
       "cardpool=\"System Gateway\"",
       "type=\"GNK / seasonal\"",
       "format=\"other\"",
-      "abr_organizer=\"bagels (Dan)\"",
+      "abr_organizer=\"bagels\"",
       "System Gateway Showdown GNK @ Galaxy of Games",
       "cobra_players=8 cobra_organizer=bagels"
     ],
@@ -87,7 +87,7 @@
       "cardpool=\"System Gateway\"",
       "type=\"GNK / seasonal\"",
       "format=\"other\"",
-      "abr_organizer=\"bagels (Dan)\"",
+      "abr_organizer=\"bagels\"",
       "System Gateway Showdown GNK @Kayfabe",
       "cobra_players=8 cobra_organizer=bagels"
     ],
@@ -143,7 +143,7 @@
       "cardpool=\"Rebellion Without Rehearsal\"",
       "type=\"non-tournament event\"",
       "format=\"other\"",
-      "abr_organizer=\"bagels (Dan)\"",
+      "abr_organizer=\"bagels\"",
       "Elevation Release Event @Riftgate",
       "Preorder your Elevation set! collect it, rip it open, hang out, and pick up some games",
       "discord_organizer=8bagels"
@@ -174,7 +174,7 @@
       "cardpool=\"System Update 2021\"",
       "type=\"GNK / seasonal\"",
       "format=\"other\"",
-      "abr_organizer=\"bagels (Dan)\"",
+      "abr_organizer=\"bagels\"",
       "Core Breach GNK @Riftgate",
       "Single Sided Swiss with \"Core\" card pool (System Gateway + Elevation). More details to come",
       "discord_organizer=8bagels"
@@ -203,7 +203,7 @@
       "cardpool=\"Rebellion Without Rehearsal\"",
       "type=\"casual tournament kit\"",
       "format=\"startup\"",
-      "abr_organizer=\"bagels (Dan)\"",
+      "abr_organizer=\"bagels\"",
       "Capture the Flag Day CTK @Riftgate",
       "Placeholder! Mark your cale data for a Casual tournament. Startup format. Riftgate Games. Prizing includes alt-arts, playmats, invitation to the next circuit breaker. More details to come.",
       "discord_organizer=8bagels"

@@ -51,60 +51,6 @@
     "normalized_date": "2025-03-19"
   },
   {
-    "id": "1329926010254397552",
-    "guild_id": "1316604261374627880",
-    "name": "Netrunner Davis Co. Meetup",
-    "description": "Come and chill, talk Netrunner, show off your latest Netrunner bling...Oh, and play some Netrunner!\n\nThis event will be held on the first Monday of each month.",
-    "channel_id": null,
-    "creator_id": "654029027274784786",
-    "creator": {
-      "id": "654029027274784786",
-      "username": "clandaith",
-      "avatar": "15673e923bf18cc2993c902f9e2513a0",
-      "discriminator": "0",
-      "public_flags": 0,
-      "flags": 0,
-      "banner": null,
-      "accent_color": null,
-      "global_name": "Herr Daith (Troy)",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "banner_color": null,
-      "clan": null,
-      "primary_guild": null
-    },
-    "image": null,
-    "scheduled_start_time": "2025-04-01T01:00:00+00:00",
-    "scheduled_end_time": "2025-04-01T04:00:00+00:00",
-    "status": 1,
-    "entity_type": 3,
-    "entity_id": null,
-    "recurrence_rule": {
-      "start": "2025-02-04T01:00:00+00:00",
-      "end": null,
-      "frequency": 1,
-      "interval": 1,
-      "by_weekday": null,
-      "by_n_weekday": [
-        {
-          "n": 1,
-          "day": 1
-        }
-      ],
-      "by_month": null,
-      "by_month_day": null,
-      "by_year_day": null,
-      "count": null
-    },
-    "privacy_level": 2,
-    "sku_ids": [],
-    "guild_scheduled_event_exceptions": [],
-    "entity_metadata": {
-      "location": "Game Haven Bountiful, 273 W 500 S, Unit 6, Bountiful, UT 84010,"
-    },
-    "normalized_date": "2025-03-31"
-  },
-  {
     "id": "1349977850450542602",
     "guild_id": "1316604261374627880",
     "name": "Netrunner Davis Co. Meetup",

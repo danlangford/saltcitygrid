@@ -1,26 +1,5 @@
 [
   {
-    "date": "2025-01-16",
-    "title": "Netrunner Davis Co Meetup",
-    "locations": [
-      "The Queen's Realm, 5451 S 1900 W #8, Roy, UT 84067"
-    ],
-    "sources": [
-      {
-        "source": "ABR",
-        "link": "https://alwaysberunning.net/tournaments/4648/netrunner-davis-co-meetup"
-      }
-    ],
-    "details": [
-      "Netrunner Davis Co Meetup",
-      "cardpool=\"Rebellion Without Rehearsal\"",
-      "type=\"non-tournament event\"",
-      "format=\"standard\"",
-      "abr_organizer=\"ClanDaith\""
-    ],
-    "images": []
-  },
-  {
     "date": "2025-01-22",
     "title": "Netrunner Utah County Meetup",
     "locations": [],

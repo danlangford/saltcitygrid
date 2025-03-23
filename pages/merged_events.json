@@ -1,24 +1,5 @@
 [
   {
-    "date": "2025-01-22",
-    "title": "Netrunner Utah County Meetup",
-    "locations": [],
-    "sources": [
-      {
-        "source": "ABR",
-        "link": "https://alwaysberunning.net/tournaments/4658/netrunner-utah-county-meetup"
-      }
-    ],
-    "details": [
-      "Netrunner Utah County Meetup",
-      "cardpool=\"Rebellion Without Rehearsal\"",
-      "type=\"non-tournament event\"",
-      "format=\"other\"",
-      "abr_organizer=\"tjaketheman\""
-    ],
-    "images": []
-  },
-  {
     "date": "2025-02-12",
     "title": "System Gateway Showdown GNK @ Galaxy of Games",
     "locations": [

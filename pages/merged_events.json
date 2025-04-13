@@ -9,10 +9,6 @@
       {
         "source": "ABR",
         "link": "https://alwaysberunning.net/tournaments/4654/system-gateway-showdown-gnk-galaxy-of-games"
-      },
-      {
-        "source": "COBRA",
-        "link": "https://tournaments.nullsignal.games/tournaments/3730"
       }
     ],
     "details": [
@@ -20,9 +16,7 @@
       "cardpool=\"System Gateway\"",
       "type=\"GNK / seasonal\"",
       "format=\"other\"",
-      "abr_organizer=\"bagels\"",
-      "System Gateway Showdown GNK @ Galaxy of Games",
-      "cobra_players=8 cobra_organizer=bagels"
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },

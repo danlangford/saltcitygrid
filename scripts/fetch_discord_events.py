@@ -46,7 +46,7 @@ filtered_past_events = [
     event
     for event in saved_events
     if datetime.strptime(event["scheduled_start_time"], "%Y-%m-%dT%H:%M:%S%z")
-    >= PAST_CUTOFF
+       >= PAST_CUTOFF
 ]
 
 # Create a dictionary of existing events for quick lookup
@@ -60,15 +60,33 @@ for guild_id in guild_ids:
     if response.status_code == 200:
         events = response.json()
         for event in events:
-            start_time_utc = datetime.strptime(
+            # Parse the main scheduled_start_time
+            main_start_time_utc = datetime.strptime(
                 event["scheduled_start_time"], "%Y-%m-%dT%H:%M:%S%z"
             )
-            if START_DATE <= start_time_utc <= END_DATE:
+            all_dates = [main_start_time_utc]
+
+            # Check for exceptions and parse their dates
+            if "guild_scheduled_event_exceptions" in event:
+                for exception in event["guild_scheduled_event_exceptions"]:
+                    exception_start_time_utc = datetime.strptime(
+                        exception["scheduled_start_time"], "%Y-%m-%dT%H:%M:%S%z"
+                    )
+                    all_dates.append(exception_start_time_utc)
+
+            # Find the earliest valid date within the range
+            valid_dates = [
+                date for date in all_dates if START_DATE <= date <= END_DATE
+            ]
+            if valid_dates:
+                next_date_utc = min(valid_dates)
                 # Convert UTC time to Mountain Time
                 mountain_tz = pytz.timezone("America/Denver")
-                start_time_mt = start_time_utc.astimezone(mountain_tz)
-                event["normalized_date"] = start_time_mt.strftime("%Y-%m-%d")
-                event_dict[event["id"]] = event
+                next_date_mt = next_date_utc.astimezone(mountain_tz)
+                event["normalized_date"] = next_date_mt.strftime("%Y-%m-%d")
+
+            # Add the event to the dictionary
+            event_dict[event["id"]] = event
     else:
         print(
             f"Failed to fetch events for guild {guild_id}: {response.status_code} - {response.text}"

@@ -63,6 +63,7 @@
     "locations": [
       "Riftgate Games, 5412 S 900 E, Murray, UT 84117",
       "Riftgate Games, 5412 S 900 E, Murray, UT 84117",
+      "Riftgate Games",
       "Riftgate Games, 5412 S 900 E, Murray, UT 84117"
     ],
     "sources": [
@@ -73,6 +74,10 @@
       {
         "source": "ABR",
         "link": "https://alwaysberunning.net/tournaments/4768/weekly-utah-meetup"
+      },
+      {
+        "source": "DISCORD",
+        "link": "https://discord.com/events/1316604261374627880/1347597904440983582"
       },
       {
         "source": "DISCORD",
@@ -88,6 +93,10 @@
       "Weekly Utah Meetup",
       "abr_organizer=\"tjaketheman\"",
       "recurring_day=Wednesday",
+      "Weekly Meetups",
+      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
+      "discord_organizer=tjaketheman",
+      "recurring",
       "Core Breach GNK @Riftgate",
       "Single Sided Swiss with \"Core\" card pool (System Gateway + Elevation). More details to come",
       "discord_organizer=8bagels"
@@ -120,26 +129,6 @@
       "Capture the Flag Day CTK @Riftgate",
       "Placeholder! Mark your cale data for a Casual tournament. Startup format. Riftgate Games. Prizing includes alt-arts, playmats, invitation to the next circuit breaker. More details to come.",
       "discord_organizer=8bagels"
-    ],
-    "images": []
-  },
-  {
-    "date": "2025-05-07",
-    "title": "Weekly Meetups",
-    "locations": [
-      "Riftgate Games"
-    ],
-    "sources": [
-      {
-        "source": "DISCORD",
-        "link": "https://discord.com/events/1316604261374627880/1347597904440983582"
-      }
-    ],
-    "details": [
-      "Weekly Meetups",
-      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
-      "discord_organizer=tjaketheman",
-      "recurring"
     ],
     "images": []
   },

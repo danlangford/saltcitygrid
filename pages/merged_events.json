@@ -1,26 +1,5 @@
 [
   {
-    "date": "2025-03-11",
-    "title": "System Gateway Showdown GNK @Kayfabe",
-    "locations": [
-      "Kayfabe Cards, 12652 S 2700 W, Riverton, UT 84065"
-    ],
-    "sources": [
-      {
-        "source": "ABR",
-        "link": "https://alwaysberunning.net/tournaments/4690/system-gateway-showdown-gnk-kayfabe"
-      }
-    ],
-    "details": [
-      "System Gateway Showdown GNK @Kayfabe",
-      "cardpool=\"System Gateway\"",
-      "type=\"GNK / seasonal\"",
-      "format=\"other\"",
-      "abr_organizer=\"bagels\""
-    ],
-    "images": []
-  },
-  {
     "date": "2025-04-24",
     "title": "Elevation Release Event @Riftgate",
     "locations": [

@@ -25,7 +25,7 @@ filtered_past_events = [
 ]
 
 # Create a dictionary of existing events for quick lookup
-event_dict = {event["id"]: event for event in filtered_past_events}
+event_dict = {event["abr_id"]: event for event in filtered_past_events}
 
 
 # Load event titles from abr_data.json
@@ -58,11 +58,9 @@ for event in abr_data:
         event_dict[abr_id] = {
             "abr_id": abr_id,
             "title": title,
-            "date": date_str,  
-            "normalized_date": event_date.strftime(
-                "%Y-%m-%d"
-            ),  
-            "url": event["link_facebook"],  
+            "date": date_str,
+            "normalized_date": event_date.strftime("%Y-%m-%d"),
+            "url": event["link_facebook"],
         }
 
     except Exception as e:

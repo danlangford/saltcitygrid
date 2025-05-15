@@ -41,12 +41,16 @@ merged_events = defaultdict(
     }
 )
 
+
 # Helper function to set the title for a merged event
 def set_event_title(merged_event, new_title):
     """
     Sets the title for a merged event if it is not already set.
     """
-    merged_event["title"] = new_title if not merged_event["title"] else merged_event["title"]
+    merged_event["title"] = (
+        new_title if not merged_event["title"] else merged_event["title"]
+    )
+
 
 # Merge ABR events
 for event in abr_events:

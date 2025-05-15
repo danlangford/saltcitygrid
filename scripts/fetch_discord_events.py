@@ -46,7 +46,7 @@ filtered_past_events = [
     event
     for event in saved_events
     if datetime.strptime(event["scheduled_start_time"], "%Y-%m-%dT%H:%M:%S%z")
-       >= PAST_CUTOFF
+    >= PAST_CUTOFF
 ]
 
 # Create a dictionary of existing events for quick lookup
@@ -75,9 +75,7 @@ for guild_id in guild_ids:
                     all_dates.append(exception_start_time_utc)
 
             # Find the earliest valid date within the range
-            valid_dates = [
-                date for date in all_dates if START_DATE <= date <= END_DATE
-            ]
+            valid_dates = [date for date in all_dates if START_DATE <= date <= END_DATE]
             if valid_dates:
                 next_date_utc = min(valid_dates)
                 # Convert UTC time to Mountain Time

@@ -68,9 +68,9 @@ for a_tag in soup.select("a[href$='/standings']"):
         if len(columns) < 4:
             continue
 
-        rounds = int(columns[1].text.strip())  
-        player_count = int(columns[2].text.strip()) 
-        date_str = columns[3].text.strip()  
+        rounds = int(columns[1].text.strip())
+        player_count = int(columns[2].text.strip())
+        date_str = columns[3].text.strip()
 
         # Convert date string to datetime object
         event_date = datetime.strptime(date_str, "%Y-%m-%d")
@@ -102,4 +102,6 @@ all_events.sort(key=lambda x: (x["normalized_date"], x["title"]))
 with open("data/aesops_tournaments.json", "w") as f:
     json.dump(all_events, f, indent=2)
 
-print(f"Saved {len(all_events)} total Aesops tournaments to data/aesops_tournaments.json")
+print(
+    f"Saved {len(all_events)} total Aesops tournaments to data/aesops_tournaments.json"
+)

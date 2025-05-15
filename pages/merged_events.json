@@ -21,13 +21,14 @@
       }
     ],
     "details": [
-      "type=\"non-tournament event\"",
-      "discord_organizer=8bagels",
-      "Elevation Release Event @Riftgate",
-      "abr_organizer=\"bagels\"",
+      "Preorder your Elevation set! collect it, rip it open, hang out, and pick up some games"
+    ],
+    "fields": [
       "format=\"other\"",
-      "Preorder your Elevation set! collect it, rip it open, hang out, and pick up some games",
-      "cardpool=\"System Gateway\""
+      "cardpool=\"System Gateway\"",
+      "abr_organizer=\"bagels\"",
+      "type=\"non-tournament event\"",
+      "discord_organizer=8bagels"
     ],
     "images": [
       "https://cdn.discordapp.com/guild-events/1332486425475551322/847706c6db01b8a89d5ccc6b8eb8d7d9.png?size=512"
@@ -59,14 +60,15 @@
       }
     ],
     "details": [
-      "Salt City Grid: Core Format Game Night\n\nJoin us on Wednesday, May 14 at Riftgate Games in Murray, UT for a night of Netrunner action! We're running a Single-Sided Swiss tournament using the Core Format\u2014that means decks built exclusively from System Gateway and Elevation.\n\nRegistration: 6:00 PM\nRound 1 Start: 6:30 PM sharp\nLocation: Riftgate Games, 5412 S 900 E, Murray, UT 84117\nFormat: Single-sided swiss, 40 minutes per game.\nDeck Requirements: Bring one Runner and one Corp deck. No decklists required. No bans or MWL restrictions\u2014just the Core sets.\nNeed inspiration? Check out sample decks here on Null Signal Games Sample deck lists page https://nullsignal.games/players/getting-started-sample-decklists/\n\nPrizes: We'll have goodies from the 2025 Q1 & Q2 Game Night Kits, plus some extras from past kits.\n\nHosted by Dan Langford and Salt City Grid \u2013 Utah Netrunner. Whether you're a seasoned runner or new to the game, come hang out and enjoy some great matches!",
-      "aesops_players=8",
-      "cardpool=\"Elevation\"",
-      "type=\"GNK / seasonal\"",
-      "Core Breach GNK @Riftgate",
-      "discord_organizer=8bagels",
+      "Salt City Grid: Core Format Game Night\n\nJoin us on Wednesday, May 14 at Riftgate Games in Murray, UT for a night of Netrunner action! We're running a Single-Sided Swiss tournament using the Core Format\u2014that means decks built exclusively from System Gateway and Elevation.\n\nRegistration: 6:00 PM\nRound 1 Start: 6:30 PM sharp\nLocation: Riftgate Games, 5412 S 900 E, Murray, UT 84117\nFormat: Single-sided swiss, 40 minutes per game.\nDeck Requirements: Bring one Runner and one Corp deck. No decklists required. No bans or MWL restrictions\u2014just the Core sets.\nNeed inspiration? Check out sample decks here on Null Signal Games Sample deck lists page https://nullsignal.games/players/getting-started-sample-decklists/\n\nPrizes: We'll have goodies from the 2025 Q1 & Q2 Game Night Kits, plus some extras from past kits.\n\nHosted by Dan Langford and Salt City Grid \u2013 Utah Netrunner. Whether you're a seasoned runner or new to the game, come hang out and enjoy some great matches!"
+    ],
+    "fields": [
+      "format=\"other\"",
       "abr_organizer=\"bagels\"",
-      "format=\"other\""
+      "cardpool=\"Elevation\"",
+      "aesops_players=8",
+      "type=\"GNK / seasonal\"",
+      "discord_organizer=8bagels"
     ],
     "images": []
   },
@@ -88,13 +90,14 @@
       }
     ],
     "details": [
-      "Weekly Utah Meetup",
-      "discord_organizer=tjaketheman",
+      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
       "recurring",
-      "Weekly Meetups",
+      "Weekly Meetups"
+    ],
+    "fields": [
       "abr_organizer=\"tjaketheman\"",
-      "recurring_day=Wednesday",
-      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week."
+      "discord_organizer=tjaketheman",
+      "recurring_day=Wednesday"
     ],
     "images": []
   },
@@ -120,13 +123,14 @@
       }
     ],
     "details": [
-      "discord_organizer=8bagels",
-      "Placeholder! Mark your cale data for a Casual tournament. Startup format. Riftgate Games. Prizing includes alt-arts, playmats, invitation to the next circuit breaker. More details to come.",
-      "abr_organizer=\"bagels\"",
+      "Placeholder! Mark your cale data for a Casual tournament. Startup format. Riftgate Games. Prizing includes alt-arts, playmats, invitation to the next circuit breaker. More details to come."
+    ],
+    "fields": [
       "type=\"casual tournament kit\"",
-      "cardpool=\"Rebellion Without Rehearsal\"",
+      "abr_organizer=\"bagels\"",
       "format=\"startup\"",
-      "Capture the Flag Day CTK @Riftgate"
+      "cardpool=\"Rebellion Without Rehearsal\"",
+      "discord_organizer=8bagels"
     ],
     "images": []
   },
@@ -144,9 +148,10 @@
     ],
     "details": [
       "recurring",
-      "Come and chill, talk Netrunner, show off your latest Netrunner bling...Oh, and play some Netrunner!\n\nThis event will be held on the first Monday of each month.",
-      "discord_organizer=clandaith",
-      "[CANCELED] \u0336N\u0336e\u0336t\u0336r\u0336u\u0336n\u0336n\u0336e\u0336r\u0336 \u0336D\u0336a\u0336v\u0336i\u0336s\u0336 \u0336C\u0336o\u0336.\u0336 \u0336M\u0336e\u0336e\u0336t\u0336u\u0336p\u0336 \u0336"
+      "Come and chill, talk Netrunner, show off your latest Netrunner bling...Oh, and play some Netrunner!\n\nThis event will be held on the first Monday of each month."
+    ],
+    "fields": [
+      "discord_organizer=clandaith"
     ],
     "images": []
   }

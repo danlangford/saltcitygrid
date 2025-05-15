@@ -243,3 +243,26 @@ a:hover {
     animation: glitch-flash 0.6s ease-out;
 }
 
+.event-fields {
+    margin-top: 10px;
+    overflow-x: auto;
+}
+
+.event-fields table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0, 255, 204, 0.05);
+    color: #00ffcc;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.event-fields td {
+    padding: 8px;
+    border: 1px solid rgba(0, 255, 204, 0.2);
+    word-wrap: break-word;
+}
+
+.event-fields tr:nth-child(even) {
+    background: rgba(0, 255, 204, 0.03);
+}

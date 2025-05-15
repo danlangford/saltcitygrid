@@ -77,7 +77,32 @@ function createEventElement(event) {
     eventElement.querySelector(".event-date").textContent = event.date;
     eventElement.querySelector(".event-location").href = generateGoogleMapsUrl([...new Set(event.locations)].join(" | "));
     eventElement.querySelector(".event-location").textContent = [...new Set(event.locations)].join(" | ");
-    eventElement.querySelector(".event-info").textContent = [...new Set(event.details)].join(" | ");
+    eventElement.querySelector(".event-details").textContent = [...new Set(event.details)].join(" | ");
+
+    const fieldsElement = eventElement.querySelector(".event-fields");
+
+    if (event.fields && event.fields.length > 0) {
+        const tbody = fieldsElement.querySelector("tbody");
+        tbody.innerHTML = ""; // Clear any existing rows
+
+        event.fields.forEach(field => {
+            const [key, value] = field.split("=");
+            const row = document.createElement("tr");
+
+            const keyCell = document.createElement("td");
+            keyCell.textContent = key;
+
+            const valueCell = document.createElement("td");
+            valueCell.textContent = value.replace(/"/g, ""); // Remove quotes for cleaner display
+
+            row.appendChild(keyCell);
+            row.appendChild(valueCell);
+            tbody.appendChild(row);
+        });
+    } else {
+        // Remove or empty the event-fields div if no fields exist
+        fieldsElement.remove();
+    }
 
     // loop through sources creating a link for each
     const sourcesElement = eventElement.querySelector(".event-links");

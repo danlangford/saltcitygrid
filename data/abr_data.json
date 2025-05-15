@@ -57,8 +57,16 @@
     "type": "GNK / seasonal",
     "format": "other",
     "mwl": "-not applicable-",
-    "concluded": false,
+    "concluded": true,
     "charity": false,
+    "players_count": 8,
+    "top_count": 0,
+    "claim_count": 1,
+    "claim_conflict": false,
+    "matchdata": true,
+    "videos": 0,
+    "winner_runner_identity": "30010",
+    "winner_corp_identity": "35057",
     "normalized_date": "2025-05-14"
   },
   {

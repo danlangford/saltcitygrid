@@ -8,6 +8,7 @@ ABR_FILE = os.path.join(DATA_DIR, "abr_data.json")
 COBRA_FILE = os.path.join(DATA_DIR, "cobra_tournaments.json")
 DISCORD_FILE = os.path.join(DATA_DIR, "discord_events.json")
 AESOPS_FILE = os.path.join(DATA_DIR, "aesops_tournaments.json")
+FACEBOOK_FILE = os.path.join(DATA_DIR, "facebook_data.json")
 MERGED_FILE = os.path.join("pages", "merged_events.json")
 
 
@@ -25,6 +26,7 @@ abr_events = load_json(ABR_FILE)
 cobra_events = load_json(COBRA_FILE)
 discord_events = load_json(DISCORD_FILE)
 aesops_events = load_json(AESOPS_FILE)
+facebook_events = load_json(FACEBOOK_FILE)
 
 # Dictionary to store merged events by normalized date
 merged_events = defaultdict(
@@ -130,8 +132,25 @@ for event in aesops_events:
         merged_events[date]["details"].append(event["title"])
         merged_events[date]["details"].append(f"aesops_players={event['player_count']}")
 
+# Merge Facebook events
+for event in facebook_events:
+    date = event.get("normalized_date")
+    if date:
+        merged_events[date]["date"] = date
+        merged_events[date]["title"] = (
+            event["title"]
+            if not merged_events[date]["title"]
+            else merged_events[date]["title"]
+        )
+        merged_events[date]["sources"].append({"source": "FACEBOOK", "link": event["url"]})
+        merged_events[date]["details"].append(event["title"])
+
 # Convert merged dictionary to a list
 final_events = list(merged_events.values())
+
+# Deduplicate the "details" array for each event
+for event in final_events:
+    event["details"] = list(set(event["details"]))
 
 # Save merged events
 with open(MERGED_FILE, "w") as f:

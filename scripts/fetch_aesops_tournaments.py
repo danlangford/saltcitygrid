@@ -27,9 +27,6 @@ filtered_past_events = [
 # Create a dictionary of existing events for quick lookup
 event_dict = {event["id"]: event for event in filtered_past_events}
 
-# URL to fetch data from
-URL = "https://www.aesopstables.net/index?page=1"
-
 # Load event titles from abr_data.json
 try:
     with open("data/abr_data.json", "r") as f:
@@ -37,6 +34,9 @@ try:
     abr_event_titles = [event["title"] for event in abr_data]
 except (FileNotFoundError, json.JSONDecodeError):
     abr_event_titles = []
+
+# URL to fetch data from
+URL = "https://www.aesopstables.net/index?page=1"
 
 # Fetch HTML content
 response = requests.get(URL)

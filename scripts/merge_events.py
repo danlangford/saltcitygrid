@@ -7,6 +7,7 @@ DATA_DIR = "data"
 ABR_FILE = os.path.join(DATA_DIR, "abr_data.json")
 COBRA_FILE = os.path.join(DATA_DIR, "cobra_tournaments.json")
 DISCORD_FILE = os.path.join(DATA_DIR, "discord_events.json")
+AESOPS_FILE = os.path.join(DATA_DIR, "aesops_tournaments.json")
 MERGED_FILE = os.path.join("pages", "merged_events.json")
 
 
@@ -23,6 +24,7 @@ def load_json(filepath):
 abr_events = load_json(ABR_FILE)
 cobra_events = load_json(COBRA_FILE)
 discord_events = load_json(DISCORD_FILE)
+aesops_events = load_json(AESOPS_FILE)
 
 # Dictionary to store merged events by normalized date
 merged_events = defaultdict(
@@ -50,7 +52,7 @@ for event in abr_events:
         # concatenate event "store" and "address" into a single string and remove the trailing ", USA" if it exists
         if event.get("store") and event.get("address"):
             event["address"] = event["address"].replace(", USA", "")
-            merged_events[date]["locations"].append(f"{event.get("store")}, {event.get("address")}")
+            merged_events[date]["locations"].append(f"{event.get('store')}, {event.get('address')}")
 
         merged_events[date]["sources"].append({"source": "ABR", "link": event["url"]})
         merged_events[date]["details"].append(event["title"])
@@ -113,6 +115,20 @@ for event in discord_events:
             merged_events[date]["images"].append(
                 f"https://cdn.discordapp.com/guild-events/{event['id']}/{event['image']}.png?size=512"
             )
+
+# Merge Aesops events
+for event in aesops_events:
+    date = event.get("normalized_date")
+    if date:
+        merged_events[date]["date"] = date
+        merged_events[date]["title"] = (
+            event["title"]
+            if not merged_events[date]["title"]
+            else merged_events[date]["title"]
+        )
+        merged_events[date]["sources"].append({"source": "AESOPS", "link": event["url"]})
+        merged_events[date]["details"].append(event["title"])
+        merged_events[date]["details"].append(f"aesops_players={event['player_count']}")
 
 # Convert merged dictionary to a list
 final_events = list(merged_events.values())

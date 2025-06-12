@@ -138,57 +138,6 @@
     "normalized_date": "2025-05-14"
   },
   {
-    "id": "1347597904440983582",
-    "guild_id": "1316604261374627880",
-    "name": "Weekly Meetups",
-    "description": "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
-    "channel_id": null,
-    "creator_id": "196395441066213377",
-    "creator": {
-      "id": "196395441066213377",
-      "username": "tjaketheman",
-      "avatar": "a86e91ecbf1df901ea929ee6ea1365f8",
-      "discriminator": "0",
-      "public_flags": 0,
-      "flags": 0,
-      "banner": null,
-      "accent_color": null,
-      "global_name": "tjaketheman",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "banner_color": null,
-      "clan": null,
-      "primary_guild": null
-    },
-    "image": null,
-    "scheduled_start_time": "2025-06-12T00:00:00+00:00",
-    "scheduled_end_time": "2025-06-12T03:00:00+00:00",
-    "status": 2,
-    "entity_type": 3,
-    "entity_id": null,
-    "recurrence_rule": {
-      "start": "2025-03-20T00:00:00+00:00",
-      "end": null,
-      "frequency": 2,
-      "interval": 1,
-      "by_weekday": [
-        3
-      ],
-      "by_n_weekday": null,
-      "by_month": null,
-      "by_month_day": null,
-      "by_year_day": null,
-      "count": null
-    },
-    "privacy_level": 2,
-    "sku_ids": [],
-    "guild_scheduled_event_exceptions": [],
-    "entity_metadata": {
-      "location": "Riftgate Games"
-    },
-    "normalized_date": "2025-06-11"
-  },
-  {
     "id": "1345043911592378459",
     "guild_id": "1316604261374627880",
     "name": "Capture the Flag Day CTK @Riftgate",
@@ -225,5 +174,56 @@
       "location": "Riftgate Games, 5412 S 900 E, Murray, UT 84117"
     },
     "normalized_date": "2025-06-14"
+  },
+  {
+    "id": "1347597904440983582",
+    "guild_id": "1316604261374627880",
+    "name": "Weekly Meetups",
+    "description": "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
+    "channel_id": null,
+    "creator_id": "196395441066213377",
+    "creator": {
+      "id": "196395441066213377",
+      "username": "tjaketheman",
+      "avatar": "a86e91ecbf1df901ea929ee6ea1365f8",
+      "discriminator": "0",
+      "public_flags": 0,
+      "flags": 0,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "tjaketheman",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "image": null,
+    "scheduled_start_time": "2025-06-19T00:00:00+00:00",
+    "scheduled_end_time": "2025-06-19T03:00:00+00:00",
+    "status": 1,
+    "entity_type": 3,
+    "entity_id": null,
+    "recurrence_rule": {
+      "start": "2025-03-20T00:00:00+00:00",
+      "end": null,
+      "frequency": 2,
+      "interval": 1,
+      "by_weekday": [
+        3
+      ],
+      "by_n_weekday": null,
+      "by_month": null,
+      "by_month_day": null,
+      "by_year_day": null,
+      "count": null
+    },
+    "privacy_level": 2,
+    "sku_ids": [],
+    "guild_scheduled_event_exceptions": [],
+    "entity_metadata": {
+      "location": "Riftgate Games"
+    },
+    "normalized_date": "2025-06-18"
   }
 ]

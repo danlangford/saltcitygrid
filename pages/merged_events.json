@@ -25,10 +25,10 @@
     ],
     "fields": [
       "discord_organizer=8bagels",
-      "cardpool=\"Elevation\"",
       "type=\"non-tournament event\"",
-      "abr_organizer=\"bagels\"",
-      "format=\"other\""
+      "cardpool=\"Elevation\"",
+      "format=\"other\"",
+      "abr_organizer=\"bagels\""
     ],
     "images": [
       "https://cdn.discordapp.com/guild-events/1332486425475551322/847706c6db01b8a89d5ccc6b8eb8d7d9.png?size=512"
@@ -66,9 +66,9 @@
       "type=\"GNK / seasonal\"",
       "discord_organizer=8bagels",
       "cardpool=\"Elevation\"",
-      "abr_organizer=\"bagels\"",
       "aesops_players=8",
-      "format=\"other\""
+      "format=\"other\"",
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -91,8 +91,8 @@
     ],
     "details": [
       "Weekly Meetups",
-      "recurring",
-      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week."
+      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
+      "recurring"
     ],
     "fields": [
       "abr_organizer=\"tjaketheman\"",
@@ -126,11 +126,11 @@
       "Placeholder! Mark your cale data for a Casual tournament. Startup format. Riftgate Games. Prizing includes alt-arts, playmats, invitation to the next circuit breaker. More details to come."
     ],
     "fields": [
-      "format=\"startup\"",
-      "discord_organizer=8bagels",
       "type=\"casual tournament kit\"",
-      "cardpool=\"Rebellion Without Rehearsal\"",
-      "abr_organizer=\"bagels\""
+      "discord_organizer=8bagels",
+      "format=\"startup\"",
+      "abr_organizer=\"bagels\"",
+      "cardpool=\"Rebellion Without Rehearsal\""
     ],
     "images": []
   },
@@ -147,8 +147,8 @@
       }
     ],
     "details": [
-      "recurring",
-      "Come and chill, talk Netrunner, show off your latest Netrunner bling...Oh, and play some Netrunner!\n\nThis event will be held on the first Monday of each month."
+      "Come and chill, talk Netrunner, show off your latest Netrunner bling...Oh, and play some Netrunner!\n\nThis event will be held on the first Monday of each month.",
+      "recurring"
     ],
     "fields": [
       "discord_organizer=clandaith"

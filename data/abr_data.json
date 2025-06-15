@@ -96,8 +96,16 @@
     "type": "casual tournament kit",
     "format": "startup",
     "mwl": "Startup Ban List 24.09 (ignore active date)",
-    "concluded": false,
+    "concluded": true,
     "charity": false,
+    "players_count": 8,
+    "top_count": 0,
+    "claim_count": 1,
+    "claim_conflict": false,
+    "matchdata": true,
+    "videos": 0,
+    "winner_runner_identity": "35024",
+    "winner_corp_identity": "30059",
     "normalized_date": "2025-06-14"
   },
   {

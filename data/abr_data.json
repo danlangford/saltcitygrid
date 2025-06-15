@@ -99,7 +99,7 @@
     "concluded": true,
     "charity": false,
     "players_count": 8,
-    "top_count": 0,
+    "top_count": null,
     "claim_count": 2,
     "claim_conflict": false,
     "matchdata": true,

@@ -24,11 +24,11 @@
       "Preorder your Elevation set! collect it, rip it open, hang out, and pick up some games"
     ],
     "fields": [
-      "abr_organizer=\"bagels\"",
-      "format=\"other\"",
       "type=\"non-tournament event\"",
-      "cardpool=\"Elevation\"",
-      "discord_organizer=8bagels"
+      "abr_organizer=\"bagels\"",
+      "discord_organizer=8bagels",
+      "format=\"other\"",
+      "cardpool=\"Elevation\""
     ],
     "images": [
       "https://cdn.discordapp.com/guild-events/1332486425475551322/847706c6db01b8a89d5ccc6b8eb8d7d9.png?size=512"
@@ -64,11 +64,11 @@
     ],
     "fields": [
       "abr_organizer=\"bagels\"",
+      "type=\"GNK / seasonal\"",
+      "discord_organizer=8bagels",
       "aesops_players=8",
       "format=\"other\"",
-      "type=\"GNK / seasonal\"",
-      "cardpool=\"Elevation\"",
-      "discord_organizer=8bagels"
+      "cardpool=\"Elevation\""
     ],
     "images": []
   },
@@ -102,11 +102,11 @@
     ],
     "fields": [
       "abr_organizer=\"bagels\"",
-      "aesops_players=8",
       "cardpool=\"Rebellion Without Rehearsal\"",
       "type=\"casual tournament kit\"",
+      "discord_organizer=8bagels",
       "format=\"startup\"",
-      "discord_organizer=8bagels"
+      "aesops_players=8"
     ],
     "images": []
   },
@@ -129,13 +129,13 @@
     ],
     "details": [
       "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
-      "recurring",
-      "Weekly Meetups"
+      "Weekly Meetups",
+      "recurring"
     ],
     "fields": [
-      "recurring_day=Wednesday",
       "abr_organizer=\"tjaketheman\"",
-      "discord_organizer=tjaketheman"
+      "discord_organizer=tjaketheman",
+      "recurring_day=Wednesday"
     ],
     "images": []
   },

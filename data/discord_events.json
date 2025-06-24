@@ -1,43 +1,5 @@
 [
   {
-    "id": "1332486425475551322",
-    "guild_id": "1316604261374627880",
-    "name": "Elevation Release Event @Riftgate",
-    "description": "Preorder your Elevation set! collect it, rip it open, hang out, and pick up some games",
-    "channel_id": null,
-    "creator_id": "116608042224582656",
-    "creator": {
-      "id": "116608042224582656",
-      "username": "8bagels",
-      "avatar": "d940bd64c0840193368be2f0c53f3fa8",
-      "discriminator": "0",
-      "public_flags": 0,
-      "flags": 0,
-      "banner": null,
-      "accent_color": 7513561,
-      "global_name": "8bagels",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "banner_color": "#72a5d9",
-      "clan": null,
-      "primary_guild": null
-    },
-    "image": "847706c6db01b8a89d5ccc6b8eb8d7d9",
-    "scheduled_start_time": "2025-04-25T00:00:00+00:00",
-    "scheduled_end_time": "2025-04-25T02:00:00+00:00",
-    "status": 2,
-    "entity_type": 3,
-    "entity_id": null,
-    "recurrence_rule": null,
-    "privacy_level": 2,
-    "sku_ids": [],
-    "guild_scheduled_event_exceptions": [],
-    "entity_metadata": {
-      "location": "Riftgate Games, 5412 S 900 E, Murray, UT 84117"
-    },
-    "normalized_date": "2025-04-24"
-  },
-  {
     "id": "1349977850450542602",
     "guild_id": "1316604261374627880",
     "name": "[CANCELED] \u0336N\u0336e\u0336t\u0336r\u0336u\u0336n\u0336n\u0336e\u0336r\u0336 \u0336D\u0336a\u0336v\u0336i\u0336s\u0336 \u0336C\u0336o\u0336.\u0336 \u0336M\u0336e\u0336e\u0336t\u0336u\u0336p\u0336 \u0336",

@@ -29,11 +29,11 @@
     ],
     "fields": [
       "abr_organizer=\"bagels\"",
-      "cardpool=\"Elevation\"",
       "aesops_players=8",
       "type=\"GNK / seasonal\"",
-      "format=\"other\"",
-      "discord_organizer=8bagels"
+      "cardpool=\"Elevation\"",
+      "discord_organizer=8bagels",
+      "format=\"other\""
     ],
     "images": []
   },
@@ -67,11 +67,11 @@
     ],
     "fields": [
       "type=\"casual tournament kit\"",
-      "abr_organizer=\"bagels\"",
-      "format=\"startup\"",
-      "cardpool=\"Rebellion Without Rehearsal\"",
       "aesops_players=8",
-      "discord_organizer=8bagels"
+      "cardpool=\"Rebellion Without Rehearsal\"",
+      "discord_organizer=8bagels",
+      "abr_organizer=\"bagels\"",
+      "format=\"startup\""
     ],
     "images": []
   },
@@ -94,13 +94,42 @@
     ],
     "details": [
       "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
-      "Weekly Meetups",
-      "recurring"
+      "recurring",
+      "Weekly Meetups"
     ],
     "fields": [
-      "discord_organizer=tjaketheman",
       "abr_organizer=\"tjaketheman\"",
-      "recurring_day=Wednesday"
+      "recurring_day=Wednesday",
+      "discord_organizer=tjaketheman"
+    ],
+    "images": []
+  },
+  {
+    "date": "2025-07-19",
+    "title": "Standard CTK @Riftgate",
+    "locations": [
+      "Riftgate Games, 5412 S 900 E, Murray, UT 84117",
+      "Riftgate Games, 5412 S 900 E, Murray, UT 84117"
+    ],
+    "sources": [
+      {
+        "source": "ABR",
+        "link": "https://alwaysberunning.net/tournaments/5000/standard-ctk-riftgate"
+      },
+      {
+        "source": "DISCORD",
+        "link": "https://discord.com/events/1316604261374627880/1389726693463425217"
+      }
+    ],
+    "details": [
+      "Single sided Swiss playing the \u201cstandard\u201d card pool (system gateway + elevation + liberation cycle + borealis cycle + ashes cycle)\nWe need at least 8 players to be able to give away all the prizes.\nregister 11am\nround 1 12pm"
+    ],
+    "fields": [
+      "type=\"casual tournament kit\"",
+      "format=\"standard\"",
+      "cardpool=\"Elevation\"",
+      "discord_organizer=8bagels",
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -117,31 +146,11 @@
       }
     ],
     "details": [
-      "recurring",
-      "Come and chill, talk Netrunner, show off your latest Netrunner bling...Oh, and play some Netrunner!\n\nThis event will be held on the first Monday of each month."
+      "Come and chill, talk Netrunner, show off your latest Netrunner bling...Oh, and play some Netrunner!\n\nThis event will be held on the first Monday of each month.",
+      "recurring"
     ],
     "fields": [
       "discord_organizer=clandaith"
-    ],
-    "images": []
-  },
-  {
-    "date": "2025-07-19",
-    "title": "Standard CTK @Riftgate",
-    "locations": [
-      "Riftgate Games, 5412 S 900 E, Murray, UT 84117"
-    ],
-    "sources": [
-      {
-        "source": "DISCORD",
-        "link": "https://discord.com/events/1316604261374627880/1389726693463425217"
-      }
-    ],
-    "details": [
-      "Single sided Swiss playing the \u201cstandard\u201d card pool (system gateway + elevation + liberation cycle + borealis cycle + ashes cycle)\nWe need at least 8 players to be able to give away all the prizes.\nregister 11am\nround 1 12pm"
-    ],
-    "fields": [
-      "discord_organizer=8bagels"
     ],
     "images": []
   }

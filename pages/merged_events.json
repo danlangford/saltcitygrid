@@ -29,11 +29,11 @@
     ],
     "fields": [
       "type=\"GNK / seasonal\"",
-      "discord_organizer=8bagels",
-      "cardpool=\"Elevation\"",
-      "aesops_players=8",
       "format=\"other\"",
-      "abr_organizer=\"bagels\""
+      "abr_organizer=\"bagels\"",
+      "discord_organizer=8bagels",
+      "aesops_players=8",
+      "cardpool=\"Elevation\""
     ],
     "images": []
   },
@@ -66,12 +66,12 @@
       "Placeholder! Mark your cale data for a Casual tournament. Startup format. Riftgate Games. Prizing includes alt-arts, playmats, invitation to the next circuit breaker. More details to come."
     ],
     "fields": [
-      "discord_organizer=8bagels",
       "cardpool=\"Rebellion Without Rehearsal\"",
-      "aesops_players=8",
+      "abr_organizer=\"bagels\"",
       "type=\"casual tournament kit\"",
+      "discord_organizer=8bagels",
       "format=\"startup\"",
-      "abr_organizer=\"bagels\""
+      "aesops_players=8"
     ],
     "images": []
   },
@@ -79,18 +79,28 @@
     "date": "2025-07-09",
     "title": "Weekly Utah Meetup",
     "locations": [
-      "Riftgate Games, 5412 S 900 E, Murray, UT 84117"
+      "Riftgate Games, 5412 S 900 E, Murray, UT 84117",
+      "Riftgate Games"
     ],
     "sources": [
       {
         "source": "ABR",
         "link": "https://alwaysberunning.net/tournaments/4768/weekly-utah-meetup"
+      },
+      {
+        "source": "DISCORD",
+        "link": "https://discord.com/events/1316604261374627880/1347597904440983582"
       }
     ],
-    "details": [],
+    "details": [
+      "Weekly Meetups",
+      "recurring",
+      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week."
+    ],
     "fields": [
-      "recurring_day=Wednesday",
-      "abr_organizer=\"tjaketheman\""
+      "discord_organizer=tjaketheman",
+      "abr_organizer=\"tjaketheman\"",
+      "recurring_day=Wednesday"
     ],
     "images": []
   },
@@ -119,11 +129,11 @@
       "Single sided Swiss playing the \u201cstandard\u201d card pool (system gateway + elevation + liberation cycle + borealis cycle + ashes cycle)\nWe need at least 8 players to be able to give away all the prizes.\nregister 11am\nround 1 12pm"
     ],
     "fields": [
-      "discord_organizer=8bagels",
       "format=\"standard\"",
-      "cardpool=\"Elevation\"",
+      "discord_organizer=8bagels",
       "type=\"casual tournament kit\"",
-      "abr_organizer=\"bagels\""
+      "abr_organizer=\"bagels\"",
+      "cardpool=\"Elevation\""
     ],
     "images": []
   },
@@ -145,27 +155,6 @@
     ],
     "fields": [
       "discord_organizer=clandaith"
-    ],
-    "images": []
-  },
-  {
-    "date": "2025-07-02",
-    "title": "Weekly Meetups",
-    "locations": [
-      "Riftgate Games"
-    ],
-    "sources": [
-      {
-        "source": "DISCORD",
-        "link": "https://discord.com/events/1316604261374627880/1347597904440983582"
-      }
-    ],
-    "details": [
-      "recurring",
-      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week."
-    ],
-    "fields": [
-      "discord_organizer=tjaketheman"
     ],
     "images": []
   }

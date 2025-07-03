@@ -157,8 +157,18 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "banner_color": null,
-      "clan": null,
-      "primary_guild": null
+      "clan": {
+        "identity_guild_id": "268743075990470656",
+        "identity_enabled": true,
+        "tag": "KD:M",
+        "badge": "c08ecb1ef98d938294b1db84ca629ef7"
+      },
+      "primary_guild": {
+        "identity_guild_id": "268743075990470656",
+        "identity_enabled": true,
+        "tag": "KD:M",
+        "badge": "c08ecb1ef98d938294b1db84ca629ef7"
+      }
     },
     "image": null,
     "scheduled_start_time": "2025-07-10T00:00:00+00:00",

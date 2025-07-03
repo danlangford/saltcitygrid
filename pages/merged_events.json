@@ -29,11 +29,11 @@
     ],
     "fields": [
       "cardpool=\"Elevation\"",
+      "format=\"other\"",
       "discord_organizer=8bagels",
-      "type=\"GNK / seasonal\"",
-      "abr_organizer=\"bagels\"",
       "aesops_players=8",
-      "format=\"other\""
+      "type=\"GNK / seasonal\"",
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -66,12 +66,12 @@
       "Placeholder! Mark your cale data for a Casual tournament. Startup format. Riftgate Games. Prizing includes alt-arts, playmats, invitation to the next circuit breaker. More details to come."
     ],
     "fields": [
-      "type=\"casual tournament kit\"",
       "discord_organizer=8bagels",
-      "format=\"startup\"",
+      "type=\"casual tournament kit\"",
+      "aesops_players=8",
       "cardpool=\"Rebellion Without Rehearsal\"",
       "abr_organizer=\"bagels\"",
-      "aesops_players=8"
+      "format=\"startup\""
     ],
     "images": []
   },
@@ -130,9 +130,9 @@
     ],
     "fields": [
       "cardpool=\"Elevation\"",
-      "format=\"standard\"",
-      "type=\"casual tournament kit\"",
       "discord_organizer=8bagels",
+      "type=\"casual tournament kit\"",
+      "format=\"standard\"",
       "abr_organizer=\"bagels\""
     ],
     "images": []

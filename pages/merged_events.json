@@ -28,12 +28,12 @@
       "Salt City Grid: Core Format Game Night\n\nJoin us on Wednesday, May 14 at Riftgate Games in Murray, UT for a night of Netrunner action! We're running a Single-Sided Swiss tournament using the Core Format\u2014that means decks built exclusively from System Gateway and Elevation.\n\nRegistration: 6:00 PM\nRound 1 Start: 6:30 PM sharp\nLocation: Riftgate Games, 5412 S 900 E, Murray, UT 84117\nFormat: Single-sided swiss, 40 minutes per game.\nDeck Requirements: Bring one Runner and one Corp deck. No decklists required. No bans or MWL restrictions\u2014just the Core sets.\nNeed inspiration? Check out sample decks here on Null Signal Games Sample deck lists page https://nullsignal.games/players/getting-started-sample-decklists/\n\nPrizes: We'll have goodies from the 2025 Q1 & Q2 Game Night Kits, plus some extras from past kits.\n\nHosted by Dan Langford and Salt City Grid \u2013 Utah Netrunner. Whether you're a seasoned runner or new to the game, come hang out and enjoy some great matches!"
     ],
     "fields": [
-      "discord_organizer=8bagels",
-      "cardpool=\"Elevation\"",
+      "aesops_players=8",
       "type=\"GNK / seasonal\"",
+      "discord_organizer=8bagels",
       "format=\"other\"",
-      "abr_organizer=\"bagels\"",
-      "aesops_players=8"
+      "cardpool=\"Elevation\"",
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -67,11 +67,11 @@
     ],
     "fields": [
       "aesops_players=8",
-      "type=\"casual tournament kit\"",
       "discord_organizer=8bagels",
-      "abr_organizer=\"bagels\"",
+      "type=\"casual tournament kit\"",
+      "format=\"startup\"",
       "cardpool=\"Rebellion Without Rehearsal\"",
-      "format=\"startup\""
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -79,18 +79,28 @@
     "date": "2025-07-16",
     "title": "Weekly Utah Meetup",
     "locations": [
-      "Riftgate Games, 5412 S 900 E, Murray, UT 84117"
+      "Riftgate Games, 5412 S 900 E, Murray, UT 84117",
+      "Riftgate Games"
     ],
     "sources": [
       {
         "source": "ABR",
         "link": "https://alwaysberunning.net/tournaments/4768/weekly-utah-meetup"
+      },
+      {
+        "source": "DISCORD",
+        "link": "https://discord.com/events/1316604261374627880/1347597904440983582"
       }
     ],
-    "details": [],
+    "details": [
+      "Weekly Meetups",
+      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
+      "recurring"
+    ],
     "fields": [
-      "recurring_day=Wednesday",
-      "abr_organizer=\"tjaketheman\""
+      "abr_organizer=\"tjaketheman\"",
+      "discord_organizer=tjaketheman",
+      "recurring_day=Wednesday"
     ],
     "images": []
   },
@@ -119,10 +129,10 @@
       "Single sided Swiss playing the \u201cstandard\u201d card pool (system gateway + elevation + liberation cycle + borealis cycle + ashes cycle)\nWe need at least 8 players to be able to give away all the prizes.\nregister 11am\nround 1 12pm"
     ],
     "fields": [
-      "format=\"standard\"",
-      "type=\"casual tournament kit\"",
-      "cardpool=\"Elevation\"",
       "discord_organizer=8bagels",
+      "type=\"casual tournament kit\"",
+      "format=\"standard\"",
+      "cardpool=\"Elevation\"",
       "abr_organizer=\"bagels\""
     ],
     "images": []
@@ -145,27 +155,6 @@
     ],
     "fields": [
       "discord_organizer=clandaith"
-    ],
-    "images": []
-  },
-  {
-    "date": "2025-07-09",
-    "title": "Weekly Meetups",
-    "locations": [
-      "Riftgate Games"
-    ],
-    "sources": [
-      {
-        "source": "DISCORD",
-        "link": "https://discord.com/events/1316604261374627880/1347597904440983582"
-      }
-    ],
-    "details": [
-      "recurring",
-      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week."
-    ],
-    "fields": [
-      "discord_organizer=tjaketheman"
     ],
     "images": []
   }

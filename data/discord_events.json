@@ -156,6 +156,7 @@
       "global_name": "tjaketheman",
       "avatar_decoration_data": null,
       "collectibles": null,
+      "display_name_styles": null,
       "banner_color": null,
       "clan": {
         "identity_guild_id": "268743075990470656",
@@ -217,6 +218,7 @@
       "global_name": "8bagels",
       "avatar_decoration_data": null,
       "collectibles": null,
+      "display_name_styles": null,
       "banner_color": "#72a5d9",
       "clan": null,
       "primary_guild": null

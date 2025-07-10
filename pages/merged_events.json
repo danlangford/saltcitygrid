@@ -28,12 +28,12 @@
       "Salt City Grid: Core Format Game Night\n\nJoin us on Wednesday, May 14 at Riftgate Games in Murray, UT for a night of Netrunner action! We're running a Single-Sided Swiss tournament using the Core Format\u2014that means decks built exclusively from System Gateway and Elevation.\n\nRegistration: 6:00 PM\nRound 1 Start: 6:30 PM sharp\nLocation: Riftgate Games, 5412 S 900 E, Murray, UT 84117\nFormat: Single-sided swiss, 40 minutes per game.\nDeck Requirements: Bring one Runner and one Corp deck. No decklists required. No bans or MWL restrictions\u2014just the Core sets.\nNeed inspiration? Check out sample decks here on Null Signal Games Sample deck lists page https://nullsignal.games/players/getting-started-sample-decklists/\n\nPrizes: We'll have goodies from the 2025 Q1 & Q2 Game Night Kits, plus some extras from past kits.\n\nHosted by Dan Langford and Salt City Grid \u2013 Utah Netrunner. Whether you're a seasoned runner or new to the game, come hang out and enjoy some great matches!"
     ],
     "fields": [
-      "format=\"other\"",
-      "abr_organizer=\"bagels\"",
-      "cardpool=\"Elevation\"",
       "type=\"GNK / seasonal\"",
+      "format=\"other\"",
+      "discord_organizer=8bagels",
+      "abr_organizer=\"bagels\"",
       "aesops_players=8",
-      "discord_organizer=8bagels"
+      "cardpool=\"Elevation\""
     ],
     "images": []
   },
@@ -67,11 +67,11 @@
     ],
     "fields": [
       "type=\"casual tournament kit\"",
-      "abr_organizer=\"bagels\"",
       "cardpool=\"Rebellion Without Rehearsal\"",
-      "format=\"startup\"",
       "aesops_players=8",
-      "discord_organizer=8bagels"
+      "discord_organizer=8bagels",
+      "abr_organizer=\"bagels\"",
+      "format=\"startup\""
     ],
     "images": []
   },
@@ -94,12 +94,12 @@
     ],
     "details": [
       "recurring",
-      "Weekly Meetups",
-      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week."
+      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
+      "Weekly Meetups"
     ],
     "fields": [
-      "discord_organizer=tjaketheman",
       "abr_organizer=\"tjaketheman\"",
+      "discord_organizer=tjaketheman",
       "recurring_day=Wednesday"
     ],
     "images": []
@@ -131,9 +131,9 @@
     "fields": [
       "type=\"casual tournament kit\"",
       "format=\"standard\"",
-      "cardpool=\"Elevation\"",
+      "discord_organizer=8bagels",
       "abr_organizer=\"bagels\"",
-      "discord_organizer=8bagels"
+      "cardpool=\"Elevation\""
     ],
     "images": []
   },

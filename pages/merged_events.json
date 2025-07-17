@@ -28,41 +28,12 @@
       "Placeholder! Mark your cale data for a Casual tournament. Startup format. Riftgate Games. Prizing includes alt-arts, playmats, invitation to the next circuit breaker. More details to come."
     ],
     "fields": [
-      "discord_organizer=8bagels",
-      "cardpool=\"Rebellion Without Rehearsal\"",
-      "type=\"casual tournament kit\"",
+      "format=\"startup\"",
       "abr_organizer=\"bagels\"",
+      "type=\"casual tournament kit\"",
+      "discord_organizer=8bagels",
       "aesops_players=8",
-      "format=\"startup\""
-    ],
-    "images": []
-  },
-  {
-    "date": "2025-07-16",
-    "title": "Weekly Utah Meetup",
-    "locations": [
-      "Riftgate Games, 5412 S 900 E, Murray, UT 84117",
-      "Riftgate Games"
-    ],
-    "sources": [
-      {
-        "source": "ABR",
-        "link": "https://alwaysberunning.net/tournaments/4768/weekly-utah-meetup"
-      },
-      {
-        "source": "DISCORD",
-        "link": "https://discord.com/events/1316604261374627880/1347597904440983582"
-      }
-    ],
-    "details": [
-      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
-      "Weekly Meetups",
-      "recurring"
-    ],
-    "fields": [
-      "abr_organizer=\"tjaketheman\"",
-      "discord_organizer=tjaketheman",
-      "recurring_day=Wednesday"
+      "cardpool=\"Rebellion Without Rehearsal\""
     ],
     "images": []
   },
@@ -91,11 +62,51 @@
       "Single sided Swiss playing the \u201cstandard\u201d card pool (system gateway + elevation + liberation cycle + borealis cycle + ashes cycle)\nWe need at least 8 players to be able to give away all the prizes.\nregister 11am\nround 1 12pm"
     ],
     "fields": [
-      "discord_organizer=8bagels",
+      "format=\"standard\"",
       "cardpool=\"Elevation\"",
-      "type=\"casual tournament kit\"",
       "abr_organizer=\"bagels\"",
-      "format=\"standard\""
+      "discord_organizer=8bagels",
+      "type=\"casual tournament kit\""
+    ],
+    "images": []
+  },
+  {
+    "date": "2025-07-23",
+    "title": "Weekly Utah Meetup",
+    "locations": [
+      "Riftgate Games, 5412 S 900 E, Murray, UT 84117"
+    ],
+    "sources": [
+      {
+        "source": "ABR",
+        "link": "https://alwaysberunning.net/tournaments/4768/weekly-utah-meetup"
+      }
+    ],
+    "details": [],
+    "fields": [
+      "abr_organizer=\"tjaketheman\"",
+      "recurring_day=Wednesday"
+    ],
+    "images": []
+  },
+  {
+    "date": "2025-07-16",
+    "title": "Weekly Meetups",
+    "locations": [
+      "Riftgate Games"
+    ],
+    "sources": [
+      {
+        "source": "DISCORD",
+        "link": "https://discord.com/events/1316604261374627880/1347597904440983582"
+      }
+    ],
+    "details": [
+      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
+      "recurring"
+    ],
+    "fields": [
+      "discord_organizer=tjaketheman"
     ],
     "images": []
   }

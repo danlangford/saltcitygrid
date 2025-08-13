@@ -1,43 +1,5 @@
 [
   {
-    "id": "1345043911592378459",
-    "guild_id": "1316604261374627880",
-    "name": "Capture the Flag Day CTK @Riftgate",
-    "description": "Placeholder! Mark your cale data for a Casual tournament. Startup format. Riftgate Games. Prizing includes alt-arts, playmats, invitation to the next circuit breaker. More details to come.",
-    "channel_id": null,
-    "creator_id": "116608042224582656",
-    "creator": {
-      "id": "116608042224582656",
-      "username": "8bagels",
-      "avatar": "d940bd64c0840193368be2f0c53f3fa8",
-      "discriminator": "0",
-      "public_flags": 0,
-      "flags": 0,
-      "banner": null,
-      "accent_color": 7513561,
-      "global_name": "8bagels",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "banner_color": "#72a5d9",
-      "clan": null,
-      "primary_guild": null
-    },
-    "image": null,
-    "scheduled_start_time": "2025-06-14T18:00:00+00:00",
-    "scheduled_end_time": "2025-06-14T23:00:00+00:00",
-    "status": 2,
-    "entity_type": 3,
-    "entity_id": null,
-    "recurrence_rule": null,
-    "privacy_level": 2,
-    "sku_ids": [],
-    "guild_scheduled_event_exceptions": [],
-    "entity_metadata": {
-      "location": "Riftgate Games, 5412 S 900 E, Murray, UT 84117"
-    },
-    "normalized_date": "2025-06-14"
-  },
-  {
     "id": "1389726693463425217",
     "guild_id": "1316604261374627880",
     "name": "Standard CTK @Riftgate",

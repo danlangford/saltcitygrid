@@ -16,10 +16,6 @@
         "link": "https://discord.com/events/1316604261374627880/1345043911592378459"
       },
       {
-        "source": "AESOPS",
-        "link": "https://www.aesopstables.net/7056/standings"
-      },
-      {
         "source": "FACEBOOK",
         "link": "https://facebook.com/events/s/capture-the-flag-day-ctk/682640471386354/"
       }
@@ -28,12 +24,11 @@
       "Placeholder! Mark your cale data for a Casual tournament. Startup format. Riftgate Games. Prizing includes alt-arts, playmats, invitation to the next circuit breaker. More details to come."
     ],
     "fields": [
-      "abr_organizer=\"bagels\"",
       "cardpool=\"Rebellion Without Rehearsal\"",
-      "aesops_players=8",
       "type=\"casual tournament kit\"",
-      "discord_organizer=8bagels",
-      "format=\"startup\""
+      "abr_organizer=\"bagels\"",
+      "format=\"startup\"",
+      "discord_organizer=8bagels"
     ],
     "images": []
   },
@@ -62,10 +57,10 @@
       "Single sided Swiss playing the \u201cstandard\u201d card pool (system gateway + elevation + liberation cycle + borealis cycle + ashes cycle)\nWe need at least 8 players to be able to give away all the prizes.\nregister 11am\nround 1 12pm"
     ],
     "fields": [
-      "abr_organizer=\"bagels\"",
       "cardpool=\"Elevation\"",
-      "format=\"standard\"",
       "type=\"casual tournament kit\"",
+      "abr_organizer=\"bagels\"",
+      "format=\"standard\"",
       "discord_organizer=8bagels"
     ],
     "images": []
@@ -88,13 +83,13 @@
       }
     ],
     "details": [
-      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
       "Weekly Meetups",
+      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
       "recurring"
     ],
     "fields": [
-      "discord_organizer=tjaketheman",
       "abr_organizer=\"tjaketheman\"",
+      "discord_organizer=tjaketheman",
       "recurring_day=Wednesday"
     ],
     "images": []

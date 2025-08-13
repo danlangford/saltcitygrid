@@ -14,19 +14,15 @@
       {
         "source": "DISCORD",
         "link": "https://discord.com/events/1316604261374627880/1345043911592378459"
-      },
-      {
-        "source": "FACEBOOK",
-        "link": "https://facebook.com/events/s/capture-the-flag-day-ctk/682640471386354/"
       }
     ],
     "details": [
       "Placeholder! Mark your cale data for a Casual tournament. Startup format. Riftgate Games. Prizing includes alt-arts, playmats, invitation to the next circuit breaker. More details to come."
     ],
     "fields": [
-      "cardpool=\"Rebellion Without Rehearsal\"",
       "type=\"casual tournament kit\"",
       "abr_organizer=\"bagels\"",
+      "cardpool=\"Rebellion Without Rehearsal\"",
       "format=\"startup\"",
       "discord_organizer=8bagels"
     ],
@@ -57,11 +53,11 @@
       "Single sided Swiss playing the \u201cstandard\u201d card pool (system gateway + elevation + liberation cycle + borealis cycle + ashes cycle)\nWe need at least 8 players to be able to give away all the prizes.\nregister 11am\nround 1 12pm"
     ],
     "fields": [
-      "cardpool=\"Elevation\"",
       "type=\"casual tournament kit\"",
       "abr_organizer=\"bagels\"",
-      "format=\"standard\"",
-      "discord_organizer=8bagels"
+      "cardpool=\"Elevation\"",
+      "discord_organizer=8bagels",
+      "format=\"standard\""
     ],
     "images": []
   },
@@ -83,14 +79,14 @@
       }
     ],
     "details": [
-      "Weekly Meetups",
       "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
+      "Weekly Meetups",
       "recurring"
     ],
     "fields": [
-      "abr_organizer=\"tjaketheman\"",
+      "recurring_day=Wednesday",
       "discord_organizer=tjaketheman",
-      "recurring_day=Wednesday"
+      "abr_organizer=\"tjaketheman\""
     ],
     "images": []
   }

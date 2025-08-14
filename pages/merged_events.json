@@ -24,8 +24,8 @@
       "Single sided Swiss playing the \u201cstandard\u201d card pool (system gateway + elevation + liberation cycle + borealis cycle + ashes cycle)\nWe need at least 8 players to be able to give away all the prizes.\nregister 11am\nround 1 12pm"
     ],
     "fields": [
-      "discord_organizer=8bagels",
       "type=\"casual tournament kit\"",
+      "discord_organizer=8bagels",
       "cardpool=\"Elevation\"",
       "format=\"standard\"",
       "abr_organizer=\"bagels\""
@@ -50,14 +50,14 @@
       }
     ],
     "details": [
+      "recurring",
       "Weekly Meetups",
-      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
-      "recurring"
+      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week."
     ],
     "fields": [
-      "recurring_day=Wednesday",
+      "abr_organizer=\"tjaketheman\"",
       "discord_organizer=tjaketheman",
-      "abr_organizer=\"tjaketheman\""
+      "recurring_day=Wednesday"
     ],
     "images": []
   }

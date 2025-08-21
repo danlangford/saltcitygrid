@@ -25,10 +25,10 @@
     ],
     "fields": [
       "type=\"casual tournament kit\"",
-      "abr_organizer=\"bagels\"",
-      "cardpool=\"Elevation\"",
       "discord_organizer=8bagels",
-      "format=\"standard\""
+      "abr_organizer=\"bagels\"",
+      "format=\"standard\"",
+      "cardpool=\"Elevation\""
     ],
     "images": []
   },
@@ -50,14 +50,14 @@
       }
     ],
     "details": [
+      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
       "recurring",
-      "Weekly Meetups",
-      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week."
+      "Weekly Meetups"
     ],
     "fields": [
-      "abr_organizer=\"tjaketheman\"",
       "discord_organizer=tjaketheman",
-      "recurring_day=Wednesday"
+      "recurring_day=Wednesday",
+      "abr_organizer=\"tjaketheman\""
     ],
     "images": []
   }

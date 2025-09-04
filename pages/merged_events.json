@@ -24,11 +24,11 @@
       "Single sided Swiss playing the \u201cstandard\u201d card pool (system gateway + elevation + liberation cycle + borealis cycle + ashes cycle)\nWe need at least 8 players to be able to give away all the prizes.\nregister 11am\nround 1 12pm"
     ],
     "fields": [
-      "cardpool=\"Elevation\"",
       "discord_organizer=8bagels",
+      "type=\"casual tournament kit\"",
       "format=\"standard\"",
-      "abr_organizer=\"bagels\"",
-      "type=\"casual tournament kit\""
+      "cardpool=\"Elevation\"",
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -55,9 +55,9 @@
       "Weekly Meetups"
     ],
     "fields": [
-      "recurring_day=Wednesday",
+      "discord_organizer=tjaketheman",
       "abr_organizer=\"tjaketheman\"",
-      "discord_organizer=tjaketheman"
+      "recurring_day=Wednesday"
     ],
     "images": []
   }

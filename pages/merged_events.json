@@ -18,33 +18,13 @@
     ],
     "details": [
       "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
-      "Weekly Meetups",
-      "recurring"
+      "recurring",
+      "Weekly Meetups"
     ],
     "fields": [
+      "recurring_day=Wednesday",
       "abr_organizer=\"tjaketheman\"",
-      "discord_organizer=tjaketheman",
-      "recurring_day=Wednesday"
-    ],
-    "images": []
-  },
-  {
-    "date": "2025-07-19",
-    "title": "Standard CTK @Riftgate",
-    "locations": [
-      "Riftgate Games, 5412 S 900 E, Murray, UT 84117"
-    ],
-    "sources": [
-      {
-        "source": "DISCORD",
-        "link": "https://discord.com/events/1316604261374627880/1389726693463425217"
-      }
-    ],
-    "details": [
-      "Single sided Swiss playing the \u201cstandard\u201d card pool (system gateway + elevation + liberation cycle + borealis cycle + ashes cycle)\nWe need at least 8 players to be able to give away all the prizes.\nregister 11am\nround 1 12pm"
-    ],
-    "fields": [
-      "discord_organizer=8bagels"
+      "discord_organizer=tjaketheman"
     ],
     "images": []
   }

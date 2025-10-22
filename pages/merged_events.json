@@ -9,7 +9,7 @@
     "sources": [
       {
         "source": "ABR",
-        "link": "https://alwaysberunning.net/tournaments/4768/weekly-utah-meetup"
+        "link": "/tournaments/4768/weekly-utah-meetup"
       },
       {
         "source": "DISCORD",
@@ -17,13 +17,13 @@
       }
     ],
     "details": [
-      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
       "Weekly Meetups",
+      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
       "recurring"
     ],
     "fields": [
-      "discord_organizer=tjaketheman",
       "recurring_day=Wednesday",
+      "discord_organizer=tjaketheman",
       "abr_organizer=\"tjaketheman\""
     ],
     "images": []

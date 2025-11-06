@@ -18,13 +18,13 @@
     ],
     "details": [
       "Weekly Meetups",
-      "recurring",
-      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week."
+      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
+      "recurring"
     ],
     "fields": [
+      "recurring_day=Wednesday",
       "discord_organizer=tjaketheman",
-      "abr_organizer=\"tjaketheman\"",
-      "recurring_day=Wednesday"
+      "abr_organizer=\"tjaketheman\""
     ],
     "images": []
   }

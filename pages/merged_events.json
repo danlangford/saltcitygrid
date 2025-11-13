@@ -3,38 +3,27 @@
     "date": "2025-11-19",
     "title": "Weekly Utah Meetup",
     "locations": [
-      "Riftgate Games, 5412 S 900 E, Murray, UT 84117"
+      "Riftgate Games, 5412 S 900 E, Murray, UT 84117",
+      "Riftgate Games"
     ],
     "sources": [
       {
         "source": "ABR",
         "link": "/tournaments/4768/weekly-utah-meetup"
-      }
-    ],
-    "details": [],
-    "fields": [
-      "recurring_day=Wednesday",
-      "abr_organizer=\"tjaketheman\""
-    ],
-    "images": []
-  },
-  {
-    "date": "2025-11-12",
-    "title": "Weekly Meetups",
-    "locations": [
-      "Riftgate Games"
-    ],
-    "sources": [
+      },
       {
         "source": "DISCORD",
         "link": "https://discord.com/events/1316604261374627880/1347597904440983582"
       }
     ],
     "details": [
-      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
-      "recurring"
+      "Weekly Meetups",
+      "recurring",
+      "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week."
     ],
     "fields": [
+      "abr_organizer=\"tjaketheman\"",
+      "recurring_day=Wednesday",
       "discord_organizer=tjaketheman"
     ],
     "images": []

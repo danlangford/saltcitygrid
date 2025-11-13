@@ -34,9 +34,9 @@
       }
     },
     "image": null,
-    "scheduled_start_time": "2025-11-13T00:00:00+00:00",
-    "scheduled_end_time": "2025-11-13T03:00:00+00:00",
-    "status": 2,
+    "scheduled_start_time": "2025-11-20T00:00:00+00:00",
+    "scheduled_end_time": "2025-11-20T03:00:00+00:00",
+    "status": 1,
     "entity_type": 3,
     "entity_id": null,
     "recurrence_rule": {
@@ -59,6 +59,6 @@
     "entity_metadata": {
       "location": "Riftgate Games"
     },
-    "normalized_date": "2025-11-12"
+    "normalized_date": "2025-11-19"
   }
 ]

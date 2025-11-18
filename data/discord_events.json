@@ -2,8 +2,8 @@
   {
     "id": "1347597904440983582",
     "guild_id": "1316604261374627880",
-    "name": "Weekly Meetups",
-    "description": "Weekly meetups at Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
+    "name": "Weekly Meetups (Hearthside Edition)",
+    "description": "Weekly meetup on Nov 19 will be at Hearthside Games, West Jordan instead of the usual Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
     "channel_id": null,
     "creator_id": "196395441066213377",
     "creator": {
@@ -34,13 +34,13 @@
       }
     },
     "image": null,
-    "scheduled_start_time": "2025-11-20T00:00:00+00:00",
-    "scheduled_end_time": "2025-11-20T03:00:00+00:00",
+    "scheduled_start_time": "2025-11-20T01:00:00+00:00",
+    "scheduled_end_time": "2025-11-20T04:00:00+00:00",
     "status": 1,
     "entity_type": 3,
     "entity_id": null,
     "recurrence_rule": {
-      "start": "2025-03-20T00:00:00+00:00",
+      "start": "2025-11-20T01:00:00+00:00",
       "end": null,
       "frequency": 2,
       "interval": 1,
@@ -57,7 +57,7 @@
     "sku_ids": [],
     "guild_scheduled_event_exceptions": [],
     "entity_metadata": {
-      "location": "Riftgate Games"
+      "location": "Hearthside Games, 6802 S Redwood Road, West Jordan, UT"
     },
     "normalized_date": "2025-11-19"
   },

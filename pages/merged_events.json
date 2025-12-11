@@ -22,8 +22,8 @@
       "Weekly Meetups (Hearthside Edition)"
     ],
     "fields": [
-      "discord_organizer=tjaketheman",
       "recurring_day=Wednesday",
+      "discord_organizer=tjaketheman",
       "abr_organizer=\"tjaketheman\""
     ],
     "images": []

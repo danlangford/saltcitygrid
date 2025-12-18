@@ -3,18 +3,28 @@
     "date": "2025-12-24",
     "title": "Weekly Utah Meetup",
     "locations": [
-      "Riftgate Games, 5412 S 900 E, Murray, UT 84117"
+      "Riftgate Games, 5412 S 900 E, Murray, UT 84117",
+      "Hearthside Games, 6802 S Redwood Road, West Jordan, UT"
     ],
     "sources": [
       {
         "source": "ABR",
         "link": "/tournaments/4768/weekly-utah-meetup"
+      },
+      {
+        "source": "DISCORD",
+        "link": "https://discord.com/events/1316604261374627880/1347597904440983582"
       }
     ],
-    "details": [],
+    "details": [
+      "Weekly Meetups (Hearthside Edition)",
+      "Weekly meetup on Nov 19 will be at Hearthside Games, West Jordan instead of the usual Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
+      "recurring"
+    ],
     "fields": [
-      "abr_organizer=\"tjaketheman\"",
-      "recurring_day=Wednesday"
+      "discord_organizer=tjaketheman",
+      "recurring_day=Wednesday",
+      "abr_organizer=\"tjaketheman\""
     ],
     "images": []
   },
@@ -35,27 +45,6 @@
     ],
     "fields": [
       "discord_organizer=8bagels"
-    ],
-    "images": []
-  },
-  {
-    "date": "2025-12-17",
-    "title": "Weekly Meetups (Hearthside Edition)",
-    "locations": [
-      "Hearthside Games, 6802 S Redwood Road, West Jordan, UT"
-    ],
-    "sources": [
-      {
-        "source": "DISCORD",
-        "link": "https://discord.com/events/1316604261374627880/1347597904440983582"
-      }
-    ],
-    "details": [
-      "Weekly meetup on Nov 19 will be at Hearthside Games, West Jordan instead of the usual Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
-      "recurring"
-    ],
-    "fields": [
-      "discord_organizer=tjaketheman"
     ],
     "images": []
   }

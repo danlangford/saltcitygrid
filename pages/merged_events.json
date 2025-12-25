@@ -23,8 +23,8 @@
     ],
     "fields": [
       "discord_organizer=tjaketheman",
-      "recurring_day=Wednesday",
-      "abr_organizer=\"tjaketheman\""
+      "abr_organizer=\"tjaketheman\"",
+      "recurring_day=Wednesday"
     ],
     "images": []
   },

@@ -17,14 +17,14 @@
       }
     ],
     "details": [
-      "recurring",
       "Weekly meetup on Nov 19 will be at Hearthside Games, West Jordan instead of the usual Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
+      "recurring",
       "Weekly Meetups (Hearthside Edition)"
     ],
     "fields": [
-      "abr_organizer=\"tjaketheman\"",
       "recurring_day=Wednesday",
-      "discord_organizer=tjaketheman"
+      "discord_organizer=tjaketheman",
+      "abr_organizer=\"tjaketheman\""
     ],
     "images": []
   },

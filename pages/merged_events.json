@@ -22,29 +22,9 @@
       "Weekly Meetups (Hearthside Edition)"
     ],
     "fields": [
-      "abr_organizer=\"tjaketheman\"",
       "discord_organizer=tjaketheman",
+      "abr_organizer=\"tjaketheman\"",
       "recurring_day=Wednesday"
-    ],
-    "images": []
-  },
-  {
-    "date": "2025-11-19",
-    "title": "Meet Hearthside Games",
-    "locations": [
-      "Hearthside Games, 6802 S Redwood Road, West Jordan, UT"
-    ],
-    "sources": [
-      {
-        "source": "DISCORD",
-        "link": "https://discord.com/events/1316604261374627880/1439798042655068171"
-      }
-    ],
-    "details": [
-      "Enjoy our weekly meetup at a soon-to-open card shop, Hearthside Games, in West Jordan. Anybody is welcome to attend. Come learn Netrunner from the best players in the valley."
-    ],
-    "fields": [
-      "discord_organizer=8bagels"
     ],
     "images": []
   }

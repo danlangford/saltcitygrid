@@ -36,7 +36,7 @@
     "image": null,
     "scheduled_start_time": "2026-02-05T01:00:00+00:00",
     "scheduled_end_time": "2026-02-05T04:00:00+00:00",
-    "status": 1,
+    "status": 2,
     "entity_type": 3,
     "entity_id": null,
     "recurrence_rule": {

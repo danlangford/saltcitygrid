@@ -3,18 +3,18 @@
     "date": "2026-02-11",
     "title": "Weekly Utah Meetup",
     "locations": [
-      "Hearthside Games, 6802 S Redwood Rd, West Jordan, UT 84084",
       "Riftgate Games, 5412 S 900 E, Murray, UT 84117",
+      "Hearthside Games, 6802 S Redwood Rd, West Jordan, UT 84084",
       "Hearthside Games, 6802 S Redwood Road, West Jordan, UT"
     ],
     "sources": [
       {
         "source": "ABR",
-        "link": "/tournaments/5362/weekly-utah-meetup"
+        "link": "/tournaments/4768/weekly-utah-meetup"
       },
       {
         "source": "ABR",
-        "link": "/tournaments/4768/weekly-utah-meetup"
+        "link": "/tournaments/5362/weekly-utah-meetup"
       },
       {
         "source": "DISCORD",
@@ -31,10 +31,10 @@
       "recurring"
     ],
     "fields": [
-      "abr_organizer=\"tjaketheman\"",
-      "discord_organizer=tjaketheman",
       "abr_organizer=\"bagels\"",
-      "recurring_day=Wednesday"
+      "discord_organizer=tjaketheman",
+      "recurring_day=Wednesday",
+      "abr_organizer=\"tjaketheman\""
     ],
     "images": []
   }

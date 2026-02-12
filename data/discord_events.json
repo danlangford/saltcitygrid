@@ -60,5 +60,44 @@
       "location": "Hearthside Games, 6802 S Redwood Road, West Jordan, UT"
     },
     "normalized_date": "2026-02-18"
+  },
+  {
+    "id": "1471378990458601505",
+    "guild_id": "1316604261374627880",
+    "name": "Netrunner Vantage Point Release",
+    "description": "Netrunner Vantage Point Release Event is happening March 2 from 6:00 PM to 9:00 PM at Hearthside Games.\n\nPick up your pre-order and shop other sets and Netrunner products that night.\n\nPre-order now and lock in pickup: https://hearthsidegames.square.site/product/vantage-point-pre-order-for-mar-2-pickup/B76CNI4MHM5GSZOHJTOHJ7H6",
+    "channel_id": null,
+    "creator_id": "116608042224582656",
+    "creator": {
+      "id": "116608042224582656",
+      "username": "8bagels",
+      "avatar": "d940bd64c0840193368be2f0c53f3fa8",
+      "discriminator": "0",
+      "public_flags": 0,
+      "flags": 0,
+      "banner": null,
+      "accent_color": 7513561,
+      "global_name": "8bagels",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": "#72a5d9",
+      "clan": null,
+      "primary_guild": null
+    },
+    "image": "7a8c245c75a5f889c5b3a4a76005f9ae",
+    "scheduled_start_time": "2026-03-03T01:00:00+00:00",
+    "scheduled_end_time": "2026-03-03T04:00:00+00:00",
+    "status": 1,
+    "entity_type": 3,
+    "entity_id": null,
+    "recurrence_rule": null,
+    "privacy_level": 2,
+    "sku_ids": [],
+    "guild_scheduled_event_exceptions": [],
+    "entity_metadata": {
+      "location": "Hearthside Games, 6802 S Redwood Rd, West Jordan, UT 84084"
+    },
+    "normalized_date": "2026-03-02"
   }
 ]

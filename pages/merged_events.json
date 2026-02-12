@@ -14,32 +14,44 @@
       {
         "source": "DISCORD",
         "link": "https://discord.com/events/1316604261374627880/1347597904440983582"
-      }
-    ],
-    "details": [
-      "Weekly meetup on Nov 19 will be at Hearthside Games, West Jordan instead of the usual Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
-      "Weekly Meetups (Hearthside Edition)",
-      "recurring"
-    ],
-    "fields": [
-      "abr_organizer=\"bagels\"",
-      "recurring_day=Wednesday",
-      "discord_organizer=tjaketheman"
-    ],
-    "images": []
-  },
-  {
-    "date": "2026-02-11",
-    "title": "Weekly Utah Meetup",
-    "locations": [],
-    "sources": [
+      },
       {
         "source": "FACEBOOK",
         "link": "https://www.facebook.com/events/1850993775654499"
       }
     ],
-    "details": [],
-    "fields": [],
+    "details": [
+      "Weekly Meetups (Hearthside Edition)",
+      "Weekly meetup on Nov 19 will be at Hearthside Games, West Jordan instead of the usual Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
+      "recurring"
+    ],
+    "fields": [
+      "recurring_day=Wednesday",
+      "abr_organizer=\"bagels\"",
+      "discord_organizer=tjaketheman"
+    ],
     "images": []
+  },
+  {
+    "date": "2026-03-02",
+    "title": "Netrunner Vantage Point Release",
+    "locations": [
+      "Hearthside Games, 6802 S Redwood Rd, West Jordan, UT 84084"
+    ],
+    "sources": [
+      {
+        "source": "DISCORD",
+        "link": "https://discord.com/events/1316604261374627880/1471378990458601505"
+      }
+    ],
+    "details": [
+      "Netrunner Vantage Point Release Event is happening March 2 from 6:00 PM to 9:00 PM at Hearthside Games.\n\nPick up your pre-order and shop other sets and Netrunner products that night.\n\nPre-order now and lock in pickup: https://hearthsidegames.square.site/product/vantage-point-pre-order-for-mar-2-pickup/B76CNI4MHM5GSZOHJTOHJ7H6"
+    ],
+    "fields": [
+      "discord_organizer=8bagels"
+    ],
+    "images": [
+      "https://cdn.discordapp.com/guild-events/1471378990458601505/7a8c245c75a5f889c5b3a4a76005f9ae.png?size=512"
+    ]
   }
 ]

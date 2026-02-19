@@ -34,9 +34,9 @@
       }
     },
     "image": null,
-    "scheduled_start_time": "2026-02-19T01:00:00+00:00",
-    "scheduled_end_time": "2026-02-19T04:00:00+00:00",
-    "status": 2,
+    "scheduled_start_time": "2026-02-26T01:00:00+00:00",
+    "scheduled_end_time": "2026-02-26T04:00:00+00:00",
+    "status": 1,
     "entity_type": 3,
     "entity_id": null,
     "recurrence_rule": {
@@ -59,7 +59,7 @@
     "entity_metadata": {
       "location": "Hearthside Games, 6802 S Redwood Road, West Jordan, UT"
     },
-    "normalized_date": "2026-02-18"
+    "normalized_date": "2026-02-25"
   },
   {
     "id": "1471378990458601505",

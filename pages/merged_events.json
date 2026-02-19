@@ -26,9 +26,9 @@
       "recurring"
     ],
     "fields": [
-      "recurring_day=Wednesday",
       "abr_organizer=\"bagels\"",
-      "discord_organizer=tjaketheman"
+      "discord_organizer=tjaketheman",
+      "recurring_day=Wednesday"
     ],
     "images": []
   },

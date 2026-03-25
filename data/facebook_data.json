@@ -2,8 +2,22 @@
   {
     "abr_id": 5362,
     "title": "Weekly Utah Meetup",
-    "date": "2026-03-04",
-    "normalized_date": "2026-03-04",
+    "date": "2026-03-25",
+    "normalized_date": "2026-03-25",
     "url": "https://www.facebook.com/events/1850993775654499"
+  },
+  {
+    "abr_id": 5458,
+    "title": "Async Startup CTK @Hearthside",
+    "date": "2026-04-01",
+    "normalized_date": "2026-04-01",
+    "url": "https://www.facebook.com/events/1332642378885425/"
+  },
+  {
+    "abr_id": 5000,
+    "title": "PENDING ONR Cube Draft CTK @Hearthside",
+    "date": "2026-07-19",
+    "normalized_date": "2026-07-19",
+    "url": "https://www.facebook.com/events/2907560599449904/"
   }
 ]

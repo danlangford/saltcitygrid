@@ -9,6 +9,10 @@
       {
         "source": "ABR",
         "link": "https://alwaysberunning.net/tournaments/5362/weekly-utah-meetup"
+      },
+      {
+        "source": "FACEBOOK",
+        "link": "https://www.facebook.com/events/1850993775654499"
       }
     ],
     "details": [],
@@ -32,16 +36,20 @@
       {
         "source": "COBRA",
         "link": "https://tournaments.nullsignal.games/tournaments/4595"
+      },
+      {
+        "source": "FACEBOOK",
+        "link": "https://www.facebook.com/events/1332642378885425/"
       }
     ],
     "details": [
       "Async Startup CTK @Hearthside Casual Tournament Kit"
     ],
     "fields": [
-      "abr_organizer=\"bagels\"",
-      "cardpool=\"Vantage Point\"",
       "cobra_players=8 cobra_organizer=bagels",
       "format=\"startup\"",
+      "abr_organizer=\"bagels\"",
+      "cardpool=\"Vantage Point\"",
       "type=\"casual tournament kit\""
     ],
     "images": []
@@ -56,14 +64,18 @@
       {
         "source": "ABR",
         "link": "https://alwaysberunning.net/tournaments/5000/pending-onr-cube-draft-ctk-hearthside"
+      },
+      {
+        "source": "FACEBOOK",
+        "link": "https://www.facebook.com/events/2907560599449904/"
       }
     ],
     "details": [],
     "fields": [
-      "abr_organizer=\"bagels\"",
       "format=\"cube draft\"",
       "type=\"casual tournament kit\"",
-      "cardpool=\"Core Set\""
+      "cardpool=\"Core Set\"",
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -99,14 +111,9 @@
       {
         "source": "DISCORD",
         "link": "https://discord.com/events/1316604261374627880/1347597904440983582"
-      },
-      {
-        "source": "FACEBOOK",
-        "link": "https://www.facebook.com/events/1850993775654499"
       }
     ],
     "details": [
-      "Weekly Utah Meetup",
       "Weekly meetup on Nov 19 will be at Hearthside Games, West Jordan instead of the usual Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
       "recurring"
     ],

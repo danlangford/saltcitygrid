@@ -13,8 +13,8 @@
     ],
     "details": [],
     "fields": [
-      "abr_organizer=\"bagels\"",
-      "recurring_day=Wednesday"
+      "recurring_day=Wednesday",
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -28,14 +28,21 @@
       {
         "source": "ABR",
         "link": "https://alwaysberunning.net/tournaments/5458/async-startup-ctk-hearthside"
+      },
+      {
+        "source": "COBRA",
+        "link": "https://tournaments.nullsignal.games/tournaments/4595"
       }
     ],
-    "details": [],
+    "details": [
+      "Async Startup CTK @Hearthside Casual Tournament Kit"
+    ],
     "fields": [
-      "type=\"casual tournament kit\"",
+      "abr_organizer=\"bagels\"",
       "cardpool=\"Vantage Point\"",
+      "cobra_players=8 cobra_organizer=bagels",
       "format=\"startup\"",
-      "abr_organizer=\"bagels\""
+      "type=\"casual tournament kit\""
     ],
     "images": []
   },
@@ -53,10 +60,10 @@
     ],
     "details": [],
     "fields": [
+      "abr_organizer=\"bagels\"",
       "format=\"cube draft\"",
-      "cardpool=\"Core Set\"",
       "type=\"casual tournament kit\"",
-      "abr_organizer=\"bagels\""
+      "cardpool=\"Core Set\""
     ],
     "images": []
   },

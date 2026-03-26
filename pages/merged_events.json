@@ -3,17 +3,12 @@
     "date": "2026-04-01",
     "title": "Async Startup CTK @Hearthside",
     "locations": [
-      "Hearthside Games, 6802 S Redwood Rd, West Jordan, UT 84084",
       "Hearthside Games, 6802 S Redwood Rd, West Jordan, UT 84084"
     ],
     "sources": [
       {
         "source": "ABR",
         "link": "https://alwaysberunning.net/tournaments/5458/async-startup-ctk-hearthside"
-      },
-      {
-        "source": "ABR",
-        "link": "https://alwaysberunning.net/tournaments/5362/weekly-utah-meetup"
       },
       {
         "source": "COBRA",
@@ -29,16 +24,15 @@
       }
     ],
     "details": [
-      "Async Startup CTK @Hearthside Casual Tournament Kit",
-      "Weekly Utah Meetup"
+      "Weekly Utah Meetup",
+      "Async Startup CTK @Hearthside Casual Tournament Kit"
     ],
     "fields": [
+      "cobra_players=9 cobra_organizer=bagels",
+      "cardpool=\"Vantage Point\"",
       "abr_organizer=\"bagels\"",
       "type=\"casual tournament kit\"",
-      "recurring_day=Wednesday",
-      "cardpool=\"Vantage Point\"",
-      "format=\"startup\"",
-      "cobra_players=9 cobra_organizer=bagels"
+      "format=\"startup\""
     ],
     "images": []
   },
@@ -60,9 +54,9 @@
     ],
     "details": [],
     "fields": [
+      "format=\"cube draft\"",
       "abr_organizer=\"bagels\"",
       "cardpool=\"Core Set\"",
-      "format=\"cube draft\"",
       "type=\"casual tournament kit\""
     ],
     "images": []
@@ -102,8 +96,8 @@
       }
     ],
     "details": [
-      "Weekly meetup on Nov 19 will be at Hearthside Games, West Jordan instead of the usual Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
-      "recurring"
+      "recurring",
+      "Weekly meetup on Nov 19 will be at Hearthside Games, West Jordan instead of the usual Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week."
     ],
     "fields": [
       "discord_organizer=tjaketheman"

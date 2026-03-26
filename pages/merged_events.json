@@ -29,16 +29,16 @@
       }
     ],
     "details": [
-      "Weekly Utah Meetup",
-      "Async Startup CTK @Hearthside Casual Tournament Kit"
+      "Async Startup CTK @Hearthside Casual Tournament Kit",
+      "Weekly Utah Meetup"
     ],
     "fields": [
-      "recurring_day=Wednesday",
-      "cardpool=\"Vantage Point\"",
       "abr_organizer=\"bagels\"",
       "type=\"casual tournament kit\"",
-      "cobra_players=8 cobra_organizer=bagels",
-      "format=\"startup\""
+      "recurring_day=Wednesday",
+      "cardpool=\"Vantage Point\"",
+      "format=\"startup\"",
+      "cobra_players=9 cobra_organizer=bagels"
     ],
     "images": []
   },
@@ -60,9 +60,9 @@
     ],
     "details": [],
     "fields": [
-      "format=\"cube draft\"",
       "abr_organizer=\"bagels\"",
       "cardpool=\"Core Set\"",
+      "format=\"cube draft\"",
       "type=\"casual tournament kit\""
     ],
     "images": []
@@ -102,8 +102,8 @@
       }
     ],
     "details": [
-      "recurring",
-      "Weekly meetup on Nov 19 will be at Hearthside Games, West Jordan instead of the usual Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week."
+      "Weekly meetup on Nov 19 will be at Hearthside Games, West Jordan instead of the usual Riftgate Games in Murray, Utah. All are welcome to come learn and play Netrunner! We'll start around 6 each week.",
+      "recurring"
     ],
     "fields": [
       "discord_organizer=tjaketheman"

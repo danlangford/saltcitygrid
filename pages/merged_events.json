@@ -24,15 +24,36 @@
       }
     ],
     "details": [
-      "Weekly Utah Meetup",
-      "Async Startup CTK @Hearthside Casual Tournament Kit"
+      "Async Startup CTK @Hearthside Casual Tournament Kit",
+      "Weekly Utah Meetup"
     ],
     "fields": [
-      "cobra_players=9 cobra_organizer=bagels",
-      "cardpool=\"Vantage Point\"",
-      "abr_organizer=\"bagels\"",
       "type=\"casual tournament kit\"",
-      "format=\"startup\""
+      "format=\"startup\"",
+      "abr_organizer=\"bagels\"",
+      "cardpool=\"Vantage Point\"",
+      "cobra_players=9 cobra_organizer=bagels"
+    ],
+    "images": []
+  },
+  {
+    "date": "2026-05-06",
+    "title": "Weekly Utah Meetup",
+    "locations": [
+      "Hearthside Games, 6802 S Redwood Rd, West Jordan, UT 84084"
+    ],
+    "sources": [
+      {
+        "source": "ABR",
+        "link": "https://alwaysberunning.net/tournaments/5362/weekly-utah-meetup"
+      }
+    ],
+    "details": [],
+    "fields": [
+      "abr_organizer=\"bagels\"",
+      "format=\"other\"",
+      "cardpool=\"Vantage Point\"",
+      "type=\"non-tournament event\""
     ],
     "images": []
   },
@@ -40,7 +61,7 @@
     "date": "2026-07-19",
     "title": "PENDING ONR Cube Draft CTK @Hearthside",
     "locations": [
-      "Riftgate Games, 5412 S 900 E, Murray, UT 84117"
+      "Hearthside Games, 6802 S Redwood Rd, West Jordan, UT 84084"
     ],
     "sources": [
       {
@@ -55,9 +76,9 @@
     "details": [],
     "fields": [
       "format=\"cube draft\"",
-      "abr_organizer=\"bagels\"",
+      "type=\"casual tournament kit\"",
       "cardpool=\"Core Set\"",
-      "type=\"casual tournament kit\""
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },

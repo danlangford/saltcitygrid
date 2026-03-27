@@ -17,22 +17,17 @@
       {
         "source": "FACEBOOK",
         "link": "https://www.facebook.com/events/1332642378885425/"
-      },
-      {
-        "source": "FACEBOOK",
-        "link": "https://www.facebook.com/events/1850993775654499"
       }
     ],
     "details": [
-      "Async Startup CTK @Hearthside Casual Tournament Kit",
-      "Weekly Utah Meetup"
+      "Async Startup CTK @Hearthside Casual Tournament Kit"
     ],
     "fields": [
       "type=\"casual tournament kit\"",
       "format=\"startup\"",
-      "abr_organizer=\"bagels\"",
+      "cobra_players=9 cobra_organizer=bagels",
       "cardpool=\"Vantage Point\"",
-      "cobra_players=9 cobra_organizer=bagels"
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -46,14 +41,18 @@
       {
         "source": "ABR",
         "link": "https://alwaysberunning.net/tournaments/5362/weekly-utah-meetup"
+      },
+      {
+        "source": "FACEBOOK",
+        "link": "https://www.facebook.com/events/1850993775654499"
       }
     ],
     "details": [],
     "fields": [
-      "abr_organizer=\"bagels\"",
       "format=\"other\"",
-      "cardpool=\"Vantage Point\"",
-      "type=\"non-tournament event\""
+      "type=\"non-tournament event\"",
+      "abr_organizer=\"bagels\"",
+      "cardpool=\"Vantage Point\""
     ],
     "images": []
   },
@@ -75,9 +74,9 @@
     ],
     "details": [],
     "fields": [
-      "format=\"cube draft\"",
       "type=\"casual tournament kit\"",
       "cardpool=\"Core Set\"",
+      "format=\"cube draft\"",
       "abr_organizer=\"bagels\""
     ],
     "images": []

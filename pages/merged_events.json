@@ -23,10 +23,10 @@
       "Async Startup CTK @Hearthside Casual Tournament Kit"
     ],
     "fields": [
-      "cobra_players=9 cobra_organizer=bagels",
+      "format=\"startup\"",
       "abr_organizer=\"bagels\"",
       "type=\"casual tournament kit\"",
-      "format=\"startup\"",
+      "cobra_players=10 cobra_organizer=bagels",
       "cardpool=\"Vantage Point\""
     ],
     "images": []
@@ -49,9 +49,9 @@
     ],
     "details": [],
     "fields": [
-      "type=\"non-tournament event\"",
-      "abr_organizer=\"bagels\"",
       "format=\"other\"",
+      "abr_organizer=\"bagels\"",
+      "type=\"non-tournament event\"",
       "cardpool=\"Vantage Point\""
     ],
     "images": []
@@ -74,10 +74,10 @@
     ],
     "details": [],
     "fields": [
-      "format=\"cube draft\"",
       "abr_organizer=\"bagels\"",
       "type=\"casual tournament kit\"",
-      "cardpool=\"Core Set\""
+      "cardpool=\"Core Set\"",
+      "format=\"cube draft\""
     ],
     "images": []
   },

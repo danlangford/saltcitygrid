@@ -23,11 +23,11 @@
       "Async Startup CTK @Hearthside Casual Tournament Kit"
     ],
     "fields": [
-      "abr_organizer=\"bagels\"",
+      "cobra_players=10 cobra_organizer=bagels",
       "cardpool=\"Vantage Point\"",
       "type=\"casual tournament kit\"",
       "format=\"startup\"",
-      "cobra_players=10 cobra_organizer=bagels"
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -53,16 +53,16 @@
       }
     ],
     "details": [
-      "Weekly Meetups (Hearthside Edition)",
       "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend",
-      "recurring"
+      "recurring",
+      "Weekly Meetups (Hearthside Edition)"
     ],
     "fields": [
-      "abr_organizer=\"bagels\"",
+      "format=\"other\"",
       "cardpool=\"Vantage Point\"",
-      "discord_organizer=tjaketheman",
       "type=\"non-tournament event\"",
-      "format=\"other\""
+      "abr_organizer=\"bagels\"",
+      "discord_organizer=tjaketheman"
     ],
     "images": []
   },
@@ -84,33 +84,11 @@
     ],
     "details": [],
     "fields": [
-      "type=\"casual tournament kit\"",
-      "format=\"cube draft\"",
+      "cardpool=\"Core Set\"",
       "abr_organizer=\"bagels\"",
-      "cardpool=\"Core Set\""
+      "format=\"cube draft\"",
+      "type=\"casual tournament kit\""
     ],
     "images": []
-  },
-  {
-    "date": "2026-03-02",
-    "title": "Netrunner Vantage Point Release",
-    "locations": [
-      "Hearthside Games, 6802 S Redwood Rd, West Jordan, UT 84084"
-    ],
-    "sources": [
-      {
-        "source": "DISCORD",
-        "link": "https://discord.com/events/1316604261374627880/1471378990458601505"
-      }
-    ],
-    "details": [
-      "Netrunner Vantage Point Release Event is happening March 2 from 6:00 PM to 9:00 PM at Hearthside Games.\n\nPick up your pre-order and shop other sets and Netrunner products that night.\n\nPre-order now and lock in pickup: https://hearthsidegames.square.site/product/vantage-point-pre-order-for-mar-2-pickup/B76CNI4MHM5GSZOHJTOHJ7H6"
-    ],
-    "fields": [
-      "discord_organizer=8bagels"
-    ],
-    "images": [
-      "https://cdn.discordapp.com/guild-events/1471378990458601505/7a8c245c75a5f889c5b3a4a76005f9ae.png?size=512"
-    ]
   }
 ]

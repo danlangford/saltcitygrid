@@ -23,11 +23,11 @@
       "Async Startup CTK @Hearthside Casual Tournament Kit"
     ],
     "fields": [
-      "cardpool=\"Vantage Point\"",
       "cobra_players=10 cobra_organizer=bagels",
+      "cardpool=\"Vantage Point\"",
       "type=\"casual tournament kit\"",
-      "abr_organizer=\"bagels\"",
-      "format=\"startup\""
+      "format=\"startup\"",
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -35,8 +35,7 @@
     "date": "2026-05-06",
     "title": "Weekly Utah Meetup",
     "locations": [
-      "Hearthside Games, 6802 S Redwood Rd, West Jordan, UT 84084",
-      "Hearthside Games, 6802 S Redwood Road, West Jordan, UT"
+      "Hearthside Games, 6802 S Redwood Rd, West Jordan, UT 84084"
     ],
     "sources": [
       {
@@ -44,24 +43,15 @@
         "link": "https://alwaysberunning.net/tournaments/5362/weekly-utah-meetup"
       },
       {
-        "source": "DISCORD",
-        "link": "https://discord.com/events/1316604261374627880/1347597904440983582"
-      },
-      {
         "source": "FACEBOOK",
         "link": "https://www.facebook.com/events/1850993775654499"
       }
     ],
-    "details": [
-      "recurring",
-      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend",
-      "Weekly Meetups (Hearthside Edition)"
-    ],
+    "details": [],
     "fields": [
-      "cardpool=\"Vantage Point\"",
-      "discord_organizer=tjaketheman",
-      "format=\"other\"",
       "type=\"non-tournament event\"",
+      "format=\"other\"",
+      "cardpool=\"Vantage Point\"",
       "abr_organizer=\"bagels\""
     ],
     "images": []
@@ -85,9 +75,30 @@
     "details": [],
     "fields": [
       "format=\"cube draft\"",
-      "abr_organizer=\"bagels\"",
+      "cardpool=\"Core Set\"",
       "type=\"casual tournament kit\"",
-      "cardpool=\"Core Set\""
+      "abr_organizer=\"bagels\""
+    ],
+    "images": []
+  },
+  {
+    "date": "2026-05-13",
+    "title": "Weekly Meetups (Hearthside Edition)",
+    "locations": [
+      "Hearthside Games, 6802 S Redwood Road, West Jordan, UT"
+    ],
+    "sources": [
+      {
+        "source": "DISCORD",
+        "link": "https://discord.com/events/1316604261374627880/1347597904440983582"
+      }
+    ],
+    "details": [
+      "recurring",
+      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend"
+    ],
+    "fields": [
+      "discord_organizer=tjaketheman"
     ],
     "images": []
   }

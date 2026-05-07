@@ -23,11 +23,11 @@
       "Async Startup CTK @Hearthside Casual Tournament Kit"
     ],
     "fields": [
-      "cobra_players=10 cobra_organizer=bagels",
       "cardpool=\"Vantage Point\"",
+      "cobra_players=10 cobra_organizer=bagels",
       "type=\"casual tournament kit\"",
-      "format=\"startup\"",
-      "abr_organizer=\"bagels\""
+      "abr_organizer=\"bagels\"",
+      "format=\"startup\""
     ],
     "images": []
   },
@@ -53,16 +53,16 @@
       }
     ],
     "details": [
-      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend",
       "recurring",
+      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend",
       "Weekly Meetups (Hearthside Edition)"
     ],
     "fields": [
-      "format=\"other\"",
       "cardpool=\"Vantage Point\"",
+      "discord_organizer=tjaketheman",
+      "format=\"other\"",
       "type=\"non-tournament event\"",
-      "abr_organizer=\"bagels\"",
-      "discord_organizer=tjaketheman"
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -84,10 +84,10 @@
     ],
     "details": [],
     "fields": [
-      "cardpool=\"Core Set\"",
-      "abr_organizer=\"bagels\"",
       "format=\"cube draft\"",
-      "type=\"casual tournament kit\""
+      "abr_organizer=\"bagels\"",
+      "type=\"casual tournament kit\"",
+      "cardpool=\"Core Set\""
     ],
     "images": []
   }

@@ -23,11 +23,11 @@
       "Async Startup CTK @Hearthside Casual Tournament Kit"
     ],
     "fields": [
+      "cobra_players=10 cobra_organizer=bagels",
       "abr_organizer=\"bagels\"",
-      "cardpool=\"Vantage Point\"",
       "format=\"startup\"",
       "type=\"casual tournament kit\"",
-      "cobra_players=10 cobra_organizer=bagels"
+      "cardpool=\"Vantage Point\""
     ],
     "images": []
   },
@@ -74,15 +74,15 @@
     ],
     "details": [],
     "fields": [
-      "abr_organizer=\"bagels\"",
       "type=\"casual tournament kit\"",
-      "cardpool=\"Core Set\"",
-      "format=\"cube draft\""
+      "format=\"cube draft\"",
+      "abr_organizer=\"bagels\"",
+      "cardpool=\"Core Set\""
     ],
     "images": []
   },
   {
-    "date": "2026-05-13",
+    "date": "2026-05-20",
     "title": "Weekly Meetups (Hearthside Edition)",
     "locations": [
       "Hearthside Games, 6802 S Redwood Road, West Jordan, UT"
@@ -94,8 +94,8 @@
       }
     ],
     "details": [
-      "recurring",
-      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend"
+      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend",
+      "recurring"
     ],
     "fields": [
       "discord_organizer=tjaketheman"

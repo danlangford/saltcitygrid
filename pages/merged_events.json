@@ -25,9 +25,9 @@
     "fields": [
       "cobra_players=10 cobra_organizer=bagels",
       "abr_organizer=\"bagels\"",
-      "format=\"startup\"",
+      "cardpool=\"Vantage Point\"",
       "type=\"casual tournament kit\"",
-      "cardpool=\"Vantage Point\""
+      "format=\"startup\""
     ],
     "images": []
   },
@@ -49,9 +49,9 @@
     ],
     "details": [],
     "fields": [
-      "abr_organizer=\"bagels\"",
       "cardpool=\"Vantage Point\"",
       "type=\"non-tournament event\"",
+      "abr_organizer=\"bagels\"",
       "format=\"other\""
     ],
     "images": []
@@ -75,9 +75,9 @@
     "details": [],
     "fields": [
       "type=\"casual tournament kit\"",
+      "cardpool=\"Core Set\"",
       "format=\"cube draft\"",
-      "abr_organizer=\"bagels\"",
-      "cardpool=\"Core Set\""
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },

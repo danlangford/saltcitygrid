@@ -23,11 +23,11 @@
       "Async Startup CTK @Hearthside Casual Tournament Kit"
     ],
     "fields": [
-      "cobra_players=10 cobra_organizer=bagels",
-      "abr_organizer=\"bagels\"",
-      "cardpool=\"Vantage Point\"",
       "type=\"casual tournament kit\"",
-      "format=\"startup\""
+      "cobra_players=10 cobra_organizer=bagels",
+      "format=\"startup\"",
+      "abr_organizer=\"bagels\"",
+      "cardpool=\"Vantage Point\""
     ],
     "images": []
   },
@@ -49,10 +49,10 @@
     ],
     "details": [],
     "fields": [
-      "cardpool=\"Vantage Point\"",
-      "type=\"non-tournament event\"",
+      "format=\"other\"",
       "abr_organizer=\"bagels\"",
-      "format=\"other\""
+      "cardpool=\"Vantage Point\"",
+      "type=\"non-tournament event\""
     ],
     "images": []
   },
@@ -75,14 +75,14 @@
     "details": [],
     "fields": [
       "type=\"casual tournament kit\"",
-      "cardpool=\"Core Set\"",
+      "abr_organizer=\"bagels\"",
       "format=\"cube draft\"",
-      "abr_organizer=\"bagels\""
+      "cardpool=\"Core Set\""
     ],
     "images": []
   },
   {
-    "date": "2026-05-20",
+    "date": "2026-05-27",
     "title": "Weekly Meetups (Hearthside Edition)",
     "locations": [
       "Hearthside Games, 6802 S Redwood Road, West Jordan, UT"

@@ -9,18 +9,14 @@
       {
         "source": "ABR",
         "link": "https://alwaysberunning.net/tournaments/5458/async-startup-ctk-hearthside"
-      },
-      {
-        "source": "FACEBOOK",
-        "link": "https://www.facebook.com/events/1332642378885425/"
       }
     ],
     "details": [],
     "fields": [
-      "abr_organizer=\"bagels\"",
+      "type=\"casual tournament kit\"",
       "format=\"startup\"",
       "cardpool=\"Vantage Point\"",
-      "type=\"casual tournament kit\""
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -44,8 +40,8 @@
     "fields": [
       "type=\"non-tournament event\"",
       "abr_organizer=\"bagels\"",
-      "format=\"other\"",
-      "cardpool=\"Vantage Point\""
+      "cardpool=\"Vantage Point\"",
+      "format=\"other\""
     ],
     "images": []
   },
@@ -67,10 +63,10 @@
     ],
     "details": [],
     "fields": [
-      "abr_organizer=\"bagels\"",
-      "format=\"cube draft\"",
       "cardpool=\"Core Set\"",
-      "type=\"casual tournament kit\""
+      "format=\"cube draft\"",
+      "type=\"casual tournament kit\"",
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -87,8 +83,8 @@
       }
     ],
     "details": [
-      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend",
-      "recurring"
+      "recurring",
+      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend"
     ],
     "fields": [
       "discord_organizer=tjaketheman"

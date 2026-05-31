@@ -1,26 +1,5 @@
 [
   {
-    "date": "2026-04-01",
-    "title": "Async Startup CTK @Hearthside",
-    "locations": [
-      "Hearthside Games, 6802 S Redwood Rd, West Jordan, UT 84084"
-    ],
-    "sources": [
-      {
-        "source": "ABR",
-        "link": "https://alwaysberunning.net/tournaments/5458/async-startup-ctk-hearthside"
-      }
-    ],
-    "details": [],
-    "fields": [
-      "type=\"casual tournament kit\"",
-      "format=\"startup\"",
-      "cardpool=\"Vantage Point\"",
-      "abr_organizer=\"bagels\""
-    ],
-    "images": []
-  },
-  {
     "date": "2026-05-06",
     "title": "Weekly Utah Meetup",
     "locations": [
@@ -63,10 +42,10 @@
     ],
     "details": [],
     "fields": [
+      "abr_organizer=\"bagels\"",
       "cardpool=\"Core Set\"",
       "format=\"cube draft\"",
-      "type=\"casual tournament kit\"",
-      "abr_organizer=\"bagels\""
+      "type=\"casual tournament kit\""
     ],
     "images": []
   },
@@ -83,8 +62,8 @@
       }
     ],
     "details": [
-      "recurring",
-      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend"
+      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend",
+      "recurring"
     ],
     "fields": [
       "discord_organizer=tjaketheman"

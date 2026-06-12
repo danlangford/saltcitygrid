@@ -17,9 +17,9 @@
     ],
     "details": [],
     "fields": [
-      "type=\"non-tournament event\"",
-      "abr_organizer=\"bagels\"",
       "cardpool=\"Vantage Point\"",
+      "abr_organizer=\"bagels\"",
+      "type=\"non-tournament event\"",
       "format=\"other\""
     ],
     "images": []
@@ -42,15 +42,15 @@
     ],
     "details": [],
     "fields": [
-      "format=\"cube draft\"",
       "abr_organizer=\"bagels\"",
-      "cardpool=\"Core Set\"",
-      "type=\"casual tournament kit\""
+      "format=\"cube draft\"",
+      "type=\"casual tournament kit\"",
+      "cardpool=\"Core Set\""
     ],
     "images": []
   },
   {
-    "date": "2026-06-11",
+    "date": "2026-06-18",
     "title": "Weekly Meetups (Hearthside Edition)",
     "locations": [
       "Hearthside Games, 6802 S Redwood Road, West Jordan, UT"

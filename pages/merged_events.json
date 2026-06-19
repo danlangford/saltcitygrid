@@ -17,10 +17,10 @@
     ],
     "details": [],
     "fields": [
-      "abr_organizer=\"bagels\"",
-      "type=\"non-tournament event\"",
       "cardpool=\"Vantage Point\"",
-      "format=\"other\""
+      "format=\"other\"",
+      "type=\"non-tournament event\"",
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -42,15 +42,15 @@
     ],
     "details": [],
     "fields": [
-      "abr_organizer=\"bagels\"",
-      "type=\"casual tournament kit\"",
       "cardpool=\"Core Set\"",
+      "type=\"casual tournament kit\"",
+      "abr_organizer=\"bagels\"",
       "format=\"cube draft\""
     ],
     "images": []
   },
   {
-    "date": "2026-06-18",
+    "date": "2026-06-25",
     "title": "Weekly Meetups (Hearthside Edition)",
     "locations": [
       "Hearthside Games, 6802 S Redwood Road, West Jordan, UT"
@@ -62,8 +62,8 @@
       }
     ],
     "details": [
-      "recurring",
-      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend"
+      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend",
+      "recurring"
     ],
     "fields": [
       "discord_organizer=tjaketheman"

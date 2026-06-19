@@ -17,9 +17,9 @@
     ],
     "details": [],
     "fields": [
-      "cardpool=\"Vantage Point\"",
       "abr_organizer=\"bagels\"",
       "type=\"non-tournament event\"",
+      "cardpool=\"Vantage Point\"",
       "format=\"other\""
     ],
     "images": []
@@ -43,9 +43,9 @@
     "details": [],
     "fields": [
       "abr_organizer=\"bagels\"",
-      "format=\"cube draft\"",
       "type=\"casual tournament kit\"",
-      "cardpool=\"Core Set\""
+      "cardpool=\"Core Set\"",
+      "format=\"cube draft\""
     ],
     "images": []
   },

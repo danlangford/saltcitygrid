@@ -17,10 +17,10 @@
     ],
     "details": [],
     "fields": [
-      "abr_organizer=\"bagels\"",
-      "type=\"non-tournament event\"",
       "cardpool=\"Vantage Point\"",
-      "format=\"other\""
+      "format=\"other\"",
+      "abr_organizer=\"bagels\"",
+      "type=\"non-tournament event\""
     ],
     "images": []
   },
@@ -42,10 +42,10 @@
     ],
     "details": [],
     "fields": [
-      "abr_organizer=\"bagels\"",
-      "type=\"casual tournament kit\"",
       "format=\"cube draft\"",
-      "cardpool=\"Core Set\""
+      "cardpool=\"Core Set\"",
+      "type=\"casual tournament kit\"",
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -62,8 +62,8 @@
       }
     ],
     "details": [
-      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend",
-      "recurring"
+      "recurring",
+      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend"
     ],
     "fields": [
       "discord_organizer=tjaketheman"

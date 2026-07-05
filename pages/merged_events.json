@@ -1,26 +1,5 @@
 [
   {
-    "date": "2026-05-06",
-    "title": "Weekly Utah Meetup",
-    "locations": [
-      "Hearthside Games, 6802 S Redwood Rd, West Jordan, UT 84084"
-    ],
-    "sources": [
-      {
-        "source": "ABR",
-        "link": "https://alwaysberunning.net/tournaments/5362/weekly-utah-meetup"
-      }
-    ],
-    "details": [],
-    "fields": [
-      "format=\"other\"",
-      "abr_organizer=\"bagels\"",
-      "cardpool=\"Vantage Point\"",
-      "type=\"non-tournament event\""
-    ],
-    "images": []
-  },
-  {
     "date": "2026-07-19",
     "title": "PENDING ONR Cube Draft CTK @Hearthside",
     "locations": [
@@ -39,9 +18,9 @@
     "details": [],
     "fields": [
       "cardpool=\"Core Set\"",
-      "type=\"casual tournament kit\"",
+      "format=\"cube draft\"",
       "abr_organizer=\"bagels\"",
-      "format=\"cube draft\""
+      "type=\"casual tournament kit\""
     ],
     "images": []
   },

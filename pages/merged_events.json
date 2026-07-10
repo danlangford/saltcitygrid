@@ -17,10 +17,10 @@
     ],
     "details": [],
     "fields": [
-      "cardpool=\"Core Set\"",
       "format=\"cube draft\"",
-      "abr_organizer=\"bagels\"",
-      "type=\"casual tournament kit\""
+      "type=\"casual tournament kit\"",
+      "cardpool=\"Core Set\"",
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },

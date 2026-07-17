@@ -17,10 +17,10 @@
     ],
     "details": [],
     "fields": [
-      "abr_organizer=\"bagels\"",
       "cardpool=\"Core Set\"",
       "type=\"casual tournament kit\"",
-      "format=\"cube draft\""
+      "format=\"cube draft\"",
+      "abr_organizer=\"bagels\""
     ],
     "images": []
   },
@@ -37,8 +37,8 @@
       }
     ],
     "details": [
-      "recurring",
-      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend"
+      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend",
+      "recurring"
     ],
     "fields": [
       "discord_organizer=tjaketheman"

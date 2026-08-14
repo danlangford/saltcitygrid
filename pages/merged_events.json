@@ -17,15 +17,15 @@
     ],
     "details": [],
     "fields": [
-      "cardpool=\"Core Set\"",
       "abr_organizer=\"bagels\"",
+      "format=\"cube draft\"",
       "type=\"casual tournament kit\"",
-      "format=\"cube draft\""
+      "cardpool=\"Core Set\""
     ],
     "images": []
   },
   {
-    "date": "2026-08-13",
+    "date": "2026-08-20",
     "title": "Weekly Meetups (Hearthside Edition)",
     "locations": [
       "Hearthside Games, 6802 S Redwood Road, West Jordan, UT"

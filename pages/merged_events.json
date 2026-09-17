@@ -1,26 +1,5 @@
 [
   {
-    "date": "2026-07-19",
-    "title": "PENDING ONR Cube Draft CTK @Hearthside",
-    "locations": [
-      "Hearthside Games, 6802 S Redwood Rd, West Jordan, UT 84084"
-    ],
-    "sources": [
-      {
-        "source": "ABR",
-        "link": "https://alwaysberunning.net/tournaments/5000/pending-onr-cube-draft-ctk-hearthside"
-      }
-    ],
-    "details": [],
-    "fields": [
-      "format=\"cube draft\"",
-      "abr_organizer=\"bagels\"",
-      "type=\"casual tournament kit\"",
-      "cardpool=\"Core Set\""
-    ],
-    "images": []
-  },
-  {
     "date": "2026-09-17",
     "title": "Weekly Meetups (Hearthside Edition)",
     "locations": [
@@ -33,8 +12,8 @@
       }
     ],
     "details": [
-      "recurring",
-      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend"
+      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend",
+      "recurring"
     ],
     "fields": [
       "discord_organizer=tjaketheman"

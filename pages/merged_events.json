@@ -1,6 +1,6 @@
 [
   {
-    "date": "2026-09-17",
+    "date": "2026-09-24",
     "title": "Weekly Meetups (Hearthside Edition)",
     "locations": [
       "Hearthside Games, 6802 S Redwood Road, West Jordan, UT"
@@ -12,8 +12,8 @@
       }
     ],
     "details": [
-      "recurring",
-      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend"
+      "All are welcome to come learn and play Netrunner! We'll start around 6 each week. Come and go as you can. Pretty casual. Get alt arts and other promos when you attend",
+      "recurring"
     ],
     "fields": [
       "discord_organizer=tjaketheman"

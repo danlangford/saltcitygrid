@@ -14,7 +14,7 @@
       "public_flags": 0,
       "flags": 0,
       "banner": null,
-      "accent_color": null,
+      "accent_color": 4915796,
       "global_name": "tjaketheman",
       "avatar_decoration_data": {
         "asset": "a_a8c5ed13c08742cabf1973dc9d939459",
@@ -23,7 +23,7 @@
       },
       "collectibles": null,
       "display_name_styles": null,
-      "banner_color": null,
+      "banner_color": "#4b0254",
       "clan": {
         "identity_guild_id": "268743075990470656",
         "identity_enabled": true,

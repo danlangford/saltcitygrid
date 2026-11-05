@@ -16,7 +16,11 @@
       "banner": null,
       "accent_color": null,
       "global_name": "tjaketheman",
-      "avatar_decoration_data": null,
+      "avatar_decoration_data": {
+        "asset": "a_a8c5ed13c08742cabf1973dc9d939459",
+        "sku_id": "1565167965530226698",
+        "expires_at": 1799456400
+      },
       "collectibles": null,
       "display_name_styles": null,
       "banner_color": null,
